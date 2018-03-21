@@ -2,6 +2,7 @@ package com.easy.order.dao;
 
 import com.alibaba.fastjson.JSON;
 import com.easy.common.dao.SqlSessionFactoryUtil;
+import com.easy.human.dao.bean.User;
 import com.easy.order.dao.Mapper.OrderMapper;
 import com.easy.order.dao.bean.ShopRecorder;
 import com.easy.spring.response.ResponseMsg;
@@ -114,6 +115,20 @@ public class OrderDao {
 
         OrderMapper studentMapper = sqlSession.getMapper(OrderMapper.class);
         List<ShopRecorder> userList = studentMapper.listByStatus(status);
+
+        // 释放资源
+        sqlSession.close();
+
+         return  userList;
+    }
+
+    public static  List<ShopRecorder>  getMyOrder( User user) throws IOException {
+        boolean flag=false;
+
+        SqlSession sqlSession = SqlSessionFactoryUtil.getSession();
+
+        OrderMapper studentMapper = sqlSession.getMapper(OrderMapper.class);
+        List<ShopRecorder> userList = studentMapper.getMyOrder(user.getId());
 
         // 释放资源
         sqlSession.close();

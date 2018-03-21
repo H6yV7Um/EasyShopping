@@ -77,7 +77,15 @@ public class OrderController {
         List<ShopRecorder> orderList=orderService.getOrderedList();
 //        MBYViewModel mbyViewModel=new MBYResponseViewModel("200",result);
         return MbyRespnseUtils.get(orderList);
-}
+    }
+    @RequestMapping(value = "/getMyOrder", produces = MediaTypes.JSON_UTF_8)
+    @ResponseBody
+    public MBYViewModel getMyOrder( @RequestParam("msg") String  msg ) throws Exception {
+
+        List<ShopRecorder> orderList=orderService.getMyOrder(msg);
+//        MBYViewModel mbyViewModel=new MBYResponseViewModel("200",result);
+        return MbyRespnseUtils.get(orderList);
+    }
     @RequestMapping(value = "/getSign", produces = MediaTypes.JSON_UTF_8)
     @ResponseBody
     public MBYViewModel getSign( ) throws Exception {
@@ -105,7 +113,6 @@ public class OrderController {
     public MBYViewModel add(@RequestParam("msg") String  msg) throws Exception  {
 
         String reuslt=orderService.add(msg);
-//        MBYViewModel mbyViewModel=new MBYResponseViewModel("200",reuslt);
         Map<String, String> parm=new HashMap<String, String>();
         parm.put("msg","有新的订单");
 

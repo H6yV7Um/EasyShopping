@@ -1,6 +1,7 @@
 package com.easy.order.service;
 
 import com.alibaba.fastjson.JSON;
+import com.easy.human.dao.bean.User;
 import com.easy.order.dao.FileListDao;
 import com.easy.order.dao.GoodsDao;
 import com.easy.order.dao.OrderDao;
@@ -52,6 +53,12 @@ public class OrderService {
     }
     public   List<ShopRecorder> getOrderedList()throws Exception  {
         List<ShopRecorder> orders= OrderDao.listByStatus(3);
+        return orders;
+    }
+    public   List<ShopRecorder> getMyOrder(String  msg)throws Exception  {
+
+        User user=  JSON.parseObject(msg, User.class);
+        List<ShopRecorder> orders= OrderDao.getMyOrder(user);
         return orders;
     }
 
