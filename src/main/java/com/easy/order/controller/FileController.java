@@ -133,10 +133,8 @@ public class FileController {
             int hasRead=0;
             int len = 0;
             while((len = bis.read()) != -1){
-//                if (len>0){
                     out.write(len);
                     out.flush();
-//                }
             }
             out.close();
         }

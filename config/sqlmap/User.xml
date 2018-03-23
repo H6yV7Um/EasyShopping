@@ -17,9 +17,15 @@
     </select>
     <select id="getByRegisterId" parameterType="string" resultType="com.easy.human.dao.bean.User">
         SELECT * FROM User WHERE registerId=#{registerId}
+
     </select>
     <select id="getByLoginId" parameterType="string" resultType="com.easy.human.dao.bean.User">
-        SELECT * FROM User WHERE loginId=#{loginId}
+      select *,
+(case  when (select count(*) from roleuser  c where roleId =(select id from role b where b.code=1)
+and  c.userId=a.id)>0  then 1 else 0 end
+) isAdmin
+ from user a where loginId=#{loginId}
+
     </select>
     <select id="list"  resultType="com.easy.human.dao.bean.User">
         SELECT *  FROM User

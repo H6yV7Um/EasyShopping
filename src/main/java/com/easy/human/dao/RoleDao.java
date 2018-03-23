@@ -1,35 +1,33 @@
 package com.easy.human.dao;
 
 import com.alibaba.fastjson.JSON;
-import com.easy.human.dao.bean.User;
-import com.easy.human.dao.mapper.UserMapper;
-
 import com.easy.common.dao.SqlSessionFactoryUtil;
+import com.easy.human.dao.bean.Role;
+import com.easy.human.dao.mapper.RoleMapper;
 import com.easy.spring.response.ResponseMsg;
 import org.apache.ibatis.session.SqlSession;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.UUID;
 
 /**
  *
- * Title: userDao
+ * Title: RoleDao
  *
  * @author chenxiaochan
  */
-public class UserDao {
+public class RoleDao {
 
 
-    public static  boolean  add(User user) throws IOException {
+    public static  boolean  add(Role Role) throws IOException {
         boolean flag=false;
 
         SqlSession sqlSession = SqlSessionFactoryUtil.getSession();
-        UserMapper studentMapper = sqlSession.getMapper(UserMapper.class);
+        RoleMapper studentMapper = sqlSession.getMapper(RoleMapper.class);
 
-       String id= UUID.randomUUID().toString();
-       user.setId(id);
-        int count=studentMapper.add(user);
+//       String id= UUID.randomUUID().toString();
+//       Role.setId(id);
+        int count=studentMapper.add(Role);
         sqlSession.commit();
         // 释放资源
         sqlSession.close();
@@ -46,12 +44,12 @@ public class UserDao {
 
         return  flag;
     }
-    public static  String  update(User user) throws IOException {
+    public static  String  update(Role Role) throws IOException {
         boolean flag=false;
         SqlSession sqlSession = SqlSessionFactoryUtil.getSession();
-        UserMapper studentMapper = sqlSession.getMapper(UserMapper.class);
+        RoleMapper studentMapper = sqlSession.getMapper(RoleMapper.class);
 
-        int count=studentMapper.update(user);
+        int count=studentMapper.update(Role);
         sqlSession.commit();
 
         // 释放资源
@@ -66,12 +64,12 @@ public class UserDao {
 
         return  result;
     }
-    public static  String  remove(User user) throws IOException {
+    public static  String  remove(Role Role) throws IOException {
         boolean flag=false;
         SqlSession sqlSession = SqlSessionFactoryUtil.getSession();
-        UserMapper studentMapper = sqlSession.getMapper(UserMapper.class);
+        RoleMapper studentMapper = sqlSession.getMapper(RoleMapper.class);
 
-        int count=studentMapper.delete(user.getId());
+        int count=studentMapper.delete(Role.getId());
         sqlSession.commit();
 
         // 释放资源
@@ -90,11 +88,11 @@ public class UserDao {
 
         SqlSession sqlSession = SqlSessionFactoryUtil.getSession();
 
-        UserMapper studentMapper = sqlSession.getMapper(UserMapper.class);
-        List<User> userList = studentMapper.list();
-//        for (User user:userList ) {
-//            if (StringUtils.isNotEmpty(user.getImageName())){
-//                user.setImagUrl(ServiceUtils.URL+"?type=2&"+"name="+user.getImageName());
+        RoleMapper studentMapper = sqlSession.getMapper(RoleMapper.class);
+        List<Role> RoleList = studentMapper.list();
+//        for (Role Role:RoleList ) {
+//            if (StringUtils.isNotEmpty(Role.getImageName())){
+//                Role.setImagUrl(ServiceUtils.URL+"?type=2&"+"name="+Role.getImageName());
 //            }
 //        }
         // 释放资源
@@ -103,42 +101,22 @@ public class UserDao {
 
         ResponseMsg responseMsg=new ResponseMsg();
         responseMsg.setSuccess(flag);
-        responseMsg.setData(userList);
+        responseMsg.setData(RoleList);
         String result=JSON.toJSONString(responseMsg);
          return  result;
     }
-    public static  User  get(String id) throws IOException {
+    public static  Role  get(String id) throws IOException {
         SqlSession sqlSession = SqlSessionFactoryUtil.getSession();
 
-        UserMapper studentMapper = sqlSession.getMapper(UserMapper.class);
-        User user = studentMapper.get(id);
+        RoleMapper studentMapper = sqlSession.getMapper(RoleMapper.class);
+        Role Role = studentMapper.get(id);
         // 释放资源
         sqlSession.close();
 
-//        String resultOrde=JSON.toJSONString(com.easy.user);
+//        String resultOrde=JSON.toJSONString(com.easy.Role);
 
-         return  user;
+         return  Role;
     }
-    public static  User  getByRegisterId(String id) throws IOException {
-        SqlSession sqlSession = SqlSessionFactoryUtil.getSession();
 
-        UserMapper studentMapper = sqlSession.getMapper(UserMapper.class);
-        User user = studentMapper.getByRegisterId(id);
-        // 释放资源
-        sqlSession.close();
 
-//        String resultOrde=JSON.toJSONString(com.easy.user);
-
-         return  user;
-    }
-    public static  User  getByLoginId(String id) throws IOException {
-        SqlSession sqlSession = SqlSessionFactoryUtil.getSession();
-
-        UserMapper studentMapper = sqlSession.getMapper(UserMapper.class);
-        User user = studentMapper.getByLoginId(id);
-        // 释放资源
-        sqlSession.close();
-
-         return  user;
-    }
 }

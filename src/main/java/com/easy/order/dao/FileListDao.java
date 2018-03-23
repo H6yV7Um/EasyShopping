@@ -70,21 +70,15 @@ public class FileListDao {
         boolean flag=false;
 
         FileRecorder order =getFileRecorderById(id);
-
-//        String resultOrde=JSON.toJSONString(com.easy.order);
         if (order!=null){
             flag=true;
-
         }
-
         ResponseMsg responseMsg=new ResponseMsg();
         responseMsg.setSuccess(flag);
         if (order!=null){
             responseMsg.setData(order);
-
         }
         String result=JSON.toJSONString(responseMsg);
-
         return  result;
     }
 }
