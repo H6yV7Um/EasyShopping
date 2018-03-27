@@ -2,6 +2,7 @@ package com.easy.order.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.easy.common.jpush.JpushManger;
+import com.easy.order.dao.GoodsDao;
 import com.easy.order.dao.OrderDao;
 import com.easy.order.dao.bean.Goods;
 import com.easy.order.dao.bean.ShopOrder;
@@ -16,10 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springside.modules.web.MediaTypes;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 @Controller(value = "goodsController")
 @RequestMapping(value = "/api/v1/goods")
@@ -79,5 +77,14 @@ public class GoodsController {
         MBYViewModel mbyViewModel=new MBYResponseViewModel("200",result);
 
         return mbyViewModel;
+    }
+    @RequestMapping(value = "/search" ,produces = MediaTypes.JSON_UTF_8)
+    @ResponseBody
+    public MBYViewModel search(@RequestParam("msg") String  msg) throws Exception  {
+//        Goods order=  JSON.parseObject(msg, Goods.class);
+        List<Goods> goodsList= GoodsDao.search(msg);
+//        List<Goods> goodsList= GoodsDao.search(order.getName());
+
+        return MbyRespnseUtils.get(goodsList);
     }
 }

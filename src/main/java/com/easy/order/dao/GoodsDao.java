@@ -149,4 +149,21 @@ public class GoodsDao {
 
          return  order;
     }
+    public static   List<Goods>   search(String key) throws IOException {
+        boolean flag=false;
+        SqlSession sqlSession = SqlSessionFactoryUtil.getSession();
+        GoodsMapper studentMapper = sqlSession.getMapper(GoodsMapper.class);
+
+        List<Goods> userList =studentMapper.search(key);
+        sqlSession.commit();
+
+        // 释放资源
+        sqlSession.close();
+
+        return userList;
+//        ResponseMsg responseMsg=new ResponseMsg();
+//        responseMsg.setSuccess(flag);
+//        String result=JSON.toJSONString(responseMsg);
+//        return  result;
+    }
 }

@@ -29,11 +29,13 @@
     <select id="listByStatus"  resultType="com.easy.order.dao.bean.Goods">
         SELECT *  FROM Goods   WHERE status=#{status}
 
-
                 order by a.createTime desc
 
     </select>
-
+    <select id="search"  resultType="com.easy.order.dao.bean.Goods">
+        SELECT *  FROM Goods  a  WHERE name like #{key}
+        order by a.createTime desc
+    </select>
     <insert id="add" parameterType="com.easy.order.dao.bean.Goods">
         insert into Goods(id,name, creator,createTime,imageId,colorName,colorNum,content,price,status)
         values(#{id}, #{name}, #{creator} ,#{createTime}, #{imageId}, #{colorName}, #{colorNum},#{content}, #{price}, #{status})
