@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springside.modules.web.MediaTypes;
 
+import java.util.Map;
+
 @Controller(value = "RoleUserController")
 @RequestMapping(value = "/api/v1/RoleUser")
 public class RoleUserController {
@@ -32,7 +34,8 @@ public class RoleUserController {
 }
     @RequestMapping(value = "/get")
     @ResponseBody
-    public MBYViewModel get(@RequestParam("msg") String  msg ) throws Exception {
+    public MBYViewModel get(@RequestParam Map params) throws Exception  {
+        String msg=(String) params.get("msg");
 
         RoleUser order=  JSON.parseObject(msg, RoleUser.class);
         RoleUser RoleUser  = RoleUserService.get(order.getId());
@@ -54,7 +57,8 @@ public class RoleUserController {
     }
     @RequestMapping(value = "/add")
     @ResponseBody
-    public MBYViewModel add(@RequestParam("msg") String  msg) throws Exception  {
+    public MBYViewModel add(@RequestParam Map params) throws Exception  {
+        String msg=(String) params.get("msg");
 
         String reuslt= RoleUserService.add(msg);
         MBYViewModel mbyViewModel=new MBYResponseViewModel("200",reuslt);
@@ -69,7 +73,8 @@ public class RoleUserController {
 
     @RequestMapping(value = "/update")
     @ResponseBody
-    public String update(@RequestParam("msg") String  msg) throws Exception  {
+    public String update(@RequestParam Map params) throws Exception  {
+        String msg=(String) params.get("msg");
         RoleUser order=  JSON.parseObject(msg, RoleUser.class);
         String result=RoleUserDao.update(order);
 
@@ -77,7 +82,8 @@ public class RoleUserController {
     }
     @RequestMapping(value = "/remove")
     @ResponseBody
-    public MBYViewModel remove(@RequestParam("msg") String  msg) throws Exception  {
+    public MBYViewModel remove(@RequestParam Map params) throws Exception  {
+        String msg=(String) params.get("msg");
         RoleUser RoleUser=  JSON.parseObject(msg, RoleUser.class);
         String result= RoleUserDao.remove(RoleUser);
         MBYViewModel mbyViewModel=new MBYResponseViewModel("200",result);

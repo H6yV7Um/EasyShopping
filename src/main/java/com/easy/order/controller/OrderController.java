@@ -80,7 +80,8 @@ public class OrderController {
     }
     @RequestMapping(value = "/getMyOrder", produces = MediaTypes.JSON_UTF_8)
     @ResponseBody
-    public MBYViewModel getMyOrder( @RequestParam("msg") String  msg ) throws Exception {
+    public MBYViewModel getMyOrder(@RequestParam Map params) throws Exception  {
+          String msg=(String) params.get("msg");
 
         List<ShopRecorder> orderList=orderService.getMyOrder(msg);
 //        MBYViewModel mbyViewModel=new MBYResponseViewModel("200",result);
@@ -96,7 +97,8 @@ public class OrderController {
 }
     @RequestMapping(value = "/get" ,produces = MediaTypes.JSON_UTF_8)
     @ResponseBody
-    public MBYViewModel get(@RequestParam("msg") String  msg ) throws Exception {
+    public MBYViewModel get(@RequestParam Map params) throws Exception  {
+        String msg=(String) params.get("msg");
 
         ShopOrder order=  JSON.parseObject(msg, ShopOrder.class);
         ShopOrderMsg  orderMsg   = orderService.get(order.getId()) ;
@@ -110,7 +112,8 @@ public class OrderController {
     }
     @RequestMapping(value = "/add" ,produces = MediaTypes.JSON_UTF_8)
     @ResponseBody
-    public MBYViewModel add(@RequestParam("msg") String  msg) throws Exception  {
+    public MBYViewModel add(@RequestParam Map params) throws Exception  {
+        String msg=(String) params.get("msg");
 
         String reuslt=orderService.add(msg);
         Map<String, String> parm=new HashMap<String, String>();
@@ -123,7 +126,8 @@ public class OrderController {
     }
     @RequestMapping(value = "/update" ,produces = MediaTypes.JSON_UTF_8)
     @ResponseBody
-    public String update(@RequestParam("msg") String  msg) throws Exception  {
+    public String update(@RequestParam Map params) throws Exception  {
+        String msg=(String) params.get("msg");
         ShopOrder order=  JSON.parseObject(msg, ShopOrder.class);
         String result=OrderDao.update(order);
 
@@ -131,7 +135,8 @@ public class OrderController {
     }
     @RequestMapping(value = "/remove" ,produces = MediaTypes.JSON_UTF_8)
     @ResponseBody
-    public MBYViewModel remove(@RequestParam("msg") String  msg) throws Exception  {
+    public MBYViewModel remove(@RequestParam Map params) throws Exception  {
+        String msg=(String) params.get("msg");
         ShopOrder order=  JSON.parseObject(msg, ShopOrder.class);
         String result=OrderDao.remove(order);
         MBYViewModel mbyViewModel=new MBYResponseViewModel("200",result);

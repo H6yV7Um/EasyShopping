@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springside.modules.web.MediaTypes;
 
+import java.util.Map;
+
 @Controller(value = "RoleController")
 @RequestMapping(value = "/api/v1/Role")
 public class RoleController {
@@ -33,7 +35,8 @@ public class RoleController {
 }
     @RequestMapping(value = "/get")
     @ResponseBody
-    public MBYViewModel get(@RequestParam("msg") String  msg ) throws Exception {
+    public MBYViewModel get(@RequestParam Map params) throws Exception  {
+        String msg=(String) params.get("msg");
 
         Role order=  JSON.parseObject(msg, Role.class);
         Role Role  = RoleService.get(order.getId());
@@ -55,7 +58,8 @@ public class RoleController {
     }
     @RequestMapping(value = "/add")
     @ResponseBody
-    public MBYViewModel add(@RequestParam("msg") String  msg) throws Exception  {
+    public MBYViewModel add(@RequestParam Map params) throws Exception  {
+        String msg=(String) params.get("msg");
 
         String reuslt= RoleService.add(msg);
         MBYViewModel mbyViewModel=new MBYResponseViewModel("200",reuslt);
@@ -70,7 +74,8 @@ public class RoleController {
 
     @RequestMapping(value = "/update")
     @ResponseBody
-    public String update(@RequestParam("msg") String  msg) throws Exception  {
+    public String update(@RequestParam Map params) throws Exception  {
+        String msg=(String) params.get("msg");
         Role order=  JSON.parseObject(msg, Role.class);
         String result=RoleDao.update(order);
 
@@ -78,7 +83,8 @@ public class RoleController {
     }
     @RequestMapping(value = "/remove")
     @ResponseBody
-    public MBYViewModel remove(@RequestParam("msg") String  msg) throws Exception  {
+    public MBYViewModel remove(@RequestParam Map params) throws Exception  {
+        String msg=(String) params.get("msg");
         Role Role=  JSON.parseObject(msg, Role.class);
         String result= RoleDao.remove(Role);
         MBYViewModel mbyViewModel=new MBYResponseViewModel("200",result);

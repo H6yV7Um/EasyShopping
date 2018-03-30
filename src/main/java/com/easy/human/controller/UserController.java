@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springside.modules.web.MediaTypes;
 
+import java.util.Map;
+
 @Controller(value = "userController")
 @RequestMapping(value = "/api/v1/user")
 public class UserController {
@@ -25,7 +27,8 @@ public class UserController {
 
     @RequestMapping(value = "/login" ,produces = MediaTypes.JSON_UTF_8)
     @ResponseBody
-    public MBYViewModel login(  @RequestParam("msg") String  msg) throws Exception  {
+    public MBYViewModel login(@RequestParam Map params) throws Exception  {
+        String msg=(String) params.get("msg");
         User order=  JSON.parseObject(msg, User.class);
         ResponseMsg responseMsg=  userService.login(order);
 //        ResponseMsg responseMsg=new ResponseMsg();
@@ -46,7 +49,8 @@ public class UserController {
 }
     @RequestMapping(value = "/get" ,produces = MediaTypes.JSON_UTF_8)
     @ResponseBody
-    public MBYViewModel get(@RequestParam("msg") String  msg ) throws Exception {
+    public MBYViewModel get(@RequestParam Map params) throws Exception  {
+        String msg=(String) params.get("msg");
 
         User order=  JSON.parseObject(msg, User.class);
         User user  = userService.get(order.getId());
@@ -68,7 +72,8 @@ public class UserController {
     }
     @RequestMapping(value = "/add" ,produces = MediaTypes.JSON_UTF_8)
     @ResponseBody
-    public MBYViewModel add(@RequestParam("msg") String  msg) throws Exception  {
+    public MBYViewModel add(@RequestParam Map params) throws Exception  {
+        String msg=(String) params.get("msg");
 
         String reuslt= userService.add(msg);
         MBYViewModel mbyViewModel=new MBYResponseViewModel("200",reuslt);
@@ -82,7 +87,8 @@ public class UserController {
     }
     @RequestMapping(value = "/register" ,produces = MediaTypes.JSON_UTF_8)
     @ResponseBody
-    public MBYViewModel register(@RequestParam("msg") String  msg) throws Exception  {
+    public MBYViewModel register(@RequestParam Map params) throws Exception  {
+        String msg=(String) params.get("msg");
 
         boolean isExit= userService.register(msg);
 
@@ -92,7 +98,8 @@ public class UserController {
     }
     @RequestMapping(value = "/update" ,produces = MediaTypes.JSON_UTF_8)
     @ResponseBody
-    public String update(@RequestParam("msg") String  msg) throws Exception  {
+    public String update(@RequestParam Map params) throws Exception  {
+        String msg=(String) params.get("msg");
         User order=  JSON.parseObject(msg, User.class);
         String result=UserDao.update(order);
 
@@ -100,7 +107,8 @@ public class UserController {
     }
     @RequestMapping(value = "/remove" ,produces = MediaTypes.JSON_UTF_8)
     @ResponseBody
-    public MBYViewModel remove(@RequestParam("msg") String  msg) throws Exception  {
+    public MBYViewModel remove(@RequestParam Map params) throws Exception  {
+        String msg=(String) params.get("msg");
         User user=  JSON.parseObject(msg, User.class);
         String result= UserDao.remove(user);
         MBYViewModel mbyViewModel=new MBYResponseViewModel("200",result);
@@ -109,7 +117,8 @@ public class UserController {
     }
     @RequestMapping(value = "/checkUserExit" ,produces = MediaTypes.JSON_UTF_8)
     @ResponseBody
-    public MBYViewModel checkUserExit(@RequestParam("msg") String  msg) throws Exception  {
+    public MBYViewModel checkUserExit(@RequestParam Map params) throws Exception  {
+        String msg=(String) params.get("msg");
         User order=  JSON.parseObject(msg, User.class);
          boolean isExit=  userService.checkUserExit(order);
 

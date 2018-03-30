@@ -44,8 +44,8 @@ public class ShopCartController {
 }
     @RequestMapping(value = "/get")
     @ResponseBody
-    public MBYViewModel get(@RequestParam("msg") String  msg ) throws Exception {
-
+    public MBYViewModel get(@RequestParam Map params) throws Exception  {
+        String msg=(String) params.get("msg");
         ShopCart order=  JSON.parseObject(msg, ShopCart.class);
         String result  = orderService.get(order.getId());
         MBYViewModel mbyViewModel=new MBYResponseViewModel("200",result);
@@ -53,7 +53,8 @@ public class ShopCartController {
     }
     @RequestMapping(value = "/add")
     @ResponseBody
-    public MBYViewModel add(@RequestParam("msg") String  msg) throws Exception  {
+    public MBYViewModel add(@RequestParam Map params) throws Exception  {
+        String msg=(String) params.get("msg");
 
         String reuslt=orderService.add(msg);
         MBYViewModel mbyViewModel=new MBYResponseViewModel("200",reuslt);
@@ -62,7 +63,8 @@ public class ShopCartController {
     }
     @RequestMapping(value = "/update")
     @ResponseBody
-    public String update(@RequestParam("msg") String  msg) throws Exception  {
+    public String update(@RequestParam Map params) throws Exception  {
+        String msg=(String) params.get("msg");
         ShopCart order=  JSON.parseObject(msg, ShopCart.class);
         String result= ShopCartDao.update(order);
 
@@ -70,7 +72,8 @@ public class ShopCartController {
     }
     @RequestMapping(value = "/remove")
     @ResponseBody
-    public MBYViewModel remove(@RequestParam("msg") String  msg) throws Exception  {
+    public MBYViewModel remove(@RequestParam Map params) throws Exception  {
+        String msg=(String) params.get("msg");
         ShopCart order=  JSON.parseObject(msg, ShopCart.class);
         String result= ShopCartDao.remove(order);
         MBYViewModel mbyViewModel=new MBYResponseViewModel("200",result);
@@ -79,7 +82,8 @@ public class ShopCartController {
     }
     @RequestMapping(value = "/pay")
     @ResponseBody
-    public MBYViewModel pay(@RequestParam("msg") String  msg) throws Exception  {
+    public MBYViewModel pay(@RequestParam Map params) throws Exception  {
+        String msg=(String) params.get("msg");
         ShopCart order=  JSON.parseObject(msg, ShopCart.class);
         String result= ShopCartDao.remove(order);
         MBYViewModel mbyViewModel=new MBYResponseViewModel("200",result);

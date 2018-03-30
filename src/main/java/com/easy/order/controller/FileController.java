@@ -20,6 +20,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.net.URLEncoder;
+import java.util.Map;
 import java.util.UUID;
 
 @Controller(value = "fileController")
@@ -70,7 +71,8 @@ public class FileController {
      }
     @RequestMapping(value = "/get")
     @ResponseBody
-    public MBYViewModel get(@RequestParam("msg") String  msg ) throws Exception {
+    public MBYViewModel get(@RequestParam Map params) throws Exception  {
+          String msg=(String) params.get("msg");
 
         FileRecorder order=  JSON.parseObject(msg, FileRecorder.class);
         String result  = FileListDao.get(order.getId());
