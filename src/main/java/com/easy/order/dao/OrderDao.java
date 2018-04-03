@@ -12,6 +12,7 @@ import org.apache.ibatis.session.SqlSession;
 
 import java.io.IOException;
 import java.sql.Timestamp;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -128,12 +129,14 @@ public class OrderDao {
         SqlSession sqlSession = SqlSessionFactoryUtil.getSession();
 
         OrderMapper studentMapper = sqlSession.getMapper(OrderMapper.class);
-        List<ShopRecorder> userList = studentMapper.getMyOrder(user.getId());
+        String id=user.getId();
+        List<ShopRecorder> orderList = studentMapper.getPayList(id);
+//        List<ShopRecorder> userList =new ArrayList<ShopRecorder>();
 
         // 释放资源
         sqlSession.close();
 
-         return  userList;
+         return  orderList;
     }
     public static  ShopOrder  get(String id) throws IOException {
         boolean flag=false;

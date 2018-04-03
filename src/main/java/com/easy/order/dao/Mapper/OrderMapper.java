@@ -9,7 +9,7 @@ import java.util.List;
 public interface OrderMapper {
         List<ShopOrder> findAllOrders();
         List<ShopRecorder> listByStatus(int  status);
-        List<ShopRecorder> getMyOrder(String userId);
+        List<ShopRecorder> getPayList(String id);
         ShopOrder findOrderById(String id);
 
         int  add(ShopOrder Order);

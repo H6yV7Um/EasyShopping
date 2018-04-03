@@ -57,9 +57,9 @@ public class GoodsController {
     public MBYViewModel add(@RequestParam("msg") String  msg) throws Exception  {
 
         String reuslt=orderService.add(msg);
-        MBYViewModel mbyViewModel=new MBYResponseViewModel("200",reuslt);
+//        MBYViewModel mbyViewModel=new MBYResponseViewModel("200",reuslt);
 
-        return mbyViewModel;
+        return MbyRespnseUtils.get(reuslt);
     }
     @RequestMapping(value = "/update" ,produces = MediaTypes.JSON_UTF_8)
     @ResponseBody

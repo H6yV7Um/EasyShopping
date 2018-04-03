@@ -23,21 +23,18 @@ public class OrderService {
         order.setId(id);
 
         OrderDao.add(order);
-              Goods goods=  JSON.parseObject(orderMsg.getGoods(), Goods.class);
-              String goodsId= UUID.randomUUID().toString();
-              goods.setId(goodsId);
-              GoodsDao.add(goods);
-              order.setGoodsId(goodsId);
-        if (order.getType()==1) {
-            order.setStatus(3);
-        }
-              OrderDao.update(order);
-
-              FileRecorder fileRecorder=FileListDao.getFileRecorderById(goods.getImageId());
-              fileRecorder.setRefId(goods.getId());
-              FileListDao.update(fileRecorder);
-
-
+//              Goods goods=  JSON.parseObject(orderMsg.getGoods(), Goods.class);
+//              String goodsId= UUID.randomUUID().toString();
+//              goods.setId(goodsId);
+//              GoodsDao.add(goods);
+//              order.setGoodsId(goodsId);
+//        if (order.getType()==1) {
+//            order.setStatus(1);
+//        }
+////         OrderDao.update(order);
+//            FileRecorder fileRecorder=FileListDao.getFileRecorderById(goods.getImageId());
+//              fileRecorder.setRefId(goods.getId());
+//              FileListDao.update(fileRecorder);
 
         return order.getId();
     }
@@ -52,7 +49,7 @@ public class OrderService {
         OrderDao.update(order);
     }
     public   List<ShopRecorder> getOrderedList()throws Exception  {
-        List<ShopRecorder> orders= OrderDao.listByStatus(3);
+        List<ShopRecorder> orders= OrderDao.listByStatus(1);
         return orders;
     }
     public   List<ShopRecorder> getMyOrder(String  msg)throws Exception  {

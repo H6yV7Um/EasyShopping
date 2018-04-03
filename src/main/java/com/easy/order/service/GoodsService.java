@@ -18,16 +18,13 @@ public class GoodsService {
 
     public String add( String  msg) throws Exception  {
 
-              Goods goods=  JSON.parseObject(msg, Goods.class);
+          Goods goods=  JSON.parseObject(msg, Goods.class);
         String goodsId= UUID.randomUUID().toString();
         goods.setId(goodsId);
         GoodsDao.add(goods);
-              FileRecorder fileRecorder=FileListDao.getFileRecorderById(goods.getImageId());
-              fileRecorder.setRefId(goods.getId());
-              FileListDao.update(fileRecorder);
-
-
-
+         FileRecorder fileRecorder=FileListDao.getFileRecorderById(goods.getImageId());
+           fileRecorder.setRefId(goods.getId());
+           FileListDao.update(fileRecorder);
         return goods.getId();
     }
     public  String list()throws Exception  {

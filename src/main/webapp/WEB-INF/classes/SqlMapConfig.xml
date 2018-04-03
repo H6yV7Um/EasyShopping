@@ -10,9 +10,9 @@
         <!-- <property name="jdbc.driver" value=""/> -->
     </properties>
     <!-- 全局配置参数，需要时再设置 -->
-    <!-- <settings>
-
-    </settings> -->
+    <settings>
+            <setting name="logImpl" value="STDOUT_LOGGING" />
+    </settings>
 
     <!-- 别名定义 -->
     <typeAliases>
@@ -50,4 +50,5 @@
         <mapper resource="sqlmap/RoleUser.xml"/>
         <mapper resource="sqlmap/Goods.xml"/>
     </mappers>
+
 </configuration>

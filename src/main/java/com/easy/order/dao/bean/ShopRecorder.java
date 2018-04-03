@@ -7,10 +7,28 @@ public class ShopRecorder implements Serializable{
 	private String id;
 	private String name;
 	private String imageId;
-	private double price;
 
 	private double total ;
 	private double num ;
+	private String goodsId;
+	private String createTime;
+	private double price;
+
+	public String getGoodsId() {
+		return goodsId;
+	}
+
+	public void setGoodsId(String goodsId) {
+		this.goodsId = goodsId;
+	}
+
+	public String getCreateTime() {
+		return createTime;
+	}
+
+	public void setCreateTime(String createTime) {
+		this.createTime = createTime;
+	}
 
 	public String getId() {
 		return id;
