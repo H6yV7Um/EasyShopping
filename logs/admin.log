@@ -1,0 +1,3 @@
+0    [main] INFO  log4j.Application  - Appliction start.
+7    [main] ERROR log4j.Application  - Application error.
+8    [main] INFO  log4j.Application  - Application end.
