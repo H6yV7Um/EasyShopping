@@ -4856,3 +4856,227 @@ Caused by: java.io.IOException: Could not find resource db.properties
 24399 [qtp803391062-22] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":[{\"createTime\":\"2018-04-03\",\"goodsId\":\"c77fe8e1-c188-47bd-86ab-33c032bccc3d\",\"id\":\"4a2b7b8e-547a-4abf-86b6-84135902bd6d\",\"imageId\":\"2c88cc47-f2ce-4838-a970-79c197f476d5\",\"name\":\"dge\",\"num\":0,\"price\":0,\"total\":0}],\"msg\":\"\",\"success\":true}"}
 
 
+54737 [qtp803391062-16] ERROR webApi  - URI:/easy/api/v1/user/login
+54737 [qtp803391062-16] ERROR webApi  - Referer:null
+54737 [qtp803391062-16] ERROR webApi  - User-Agent:okhttp/3.9.1
+54738 [qtp803391062-16] ERROR webApi  - 输入:{"msg":["{\"isAdmin\":\"0\",\"loginId\":\"ldh\",\"pwd\":\"ldh\"}"]}
+54738 [qtp803391062-16] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":{\"id\":\"admin\",\"isAdmin\":\"1\",\"loginId\":\"ldh\",\"name\":\"admin\",\"pwd\":\"ldh\"},\"msg\":\"\",\"success\":true}"}
+
+
+55061 [qtp803391062-22] ERROR webApi  - URI:/easy/api/v1/goods/list
+55061 [qtp803391062-22] ERROR webApi  - Referer:null
+55061 [qtp803391062-22] ERROR webApi  - User-Agent:okhttp/3.9.1
+55062 [qtp803391062-22] ERROR webApi  - 输入:{"msg":["{\"colorName\":null,\"colorNum\":null,\"content\":null,\"creator\":null,\"id\":null,\"imagUrl\":null,\"imageId\":null,\"name\":null,\"price\":0.0,\"status\":1}"]}
+55062 [qtp803391062-22] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":[{\"createTime\":\"2018-04-03\",\"id\":\"7112c29b-7791-4c84-b086-7ea9235a92a2\",\"imageId\":\"7e24a8b2-fed6-41f5-a472-e3280704038b\",\"name\":\"huujju\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"3a94f066-6130-4130-a0dd-86ea60d5968d\",\"imageId\":\"d4b4db84-c690-4dae-bbc6-b09dd3801fe3\",\"name\":\"uuu\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"ea5b2355-b196-4235-8904-190ba4bef76b\",\"imageId\":\"d4b4db84-c690-4dae-bbc6-b09dd3801fe3\",\"name\":\"uuu\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"c77fe8e1-c188-47bd-86ab-33c032bccc3d\",\"imageId\":\"2c88cc47-f2ce-4838-a970-79c197f476d5\",\"name\":\"dge\",\"price\":0,\"status\":1}],\"msg\":\"\",\"success\":true}"}
+
+
+55168 [qtp803391062-21] ERROR webApi  - URI:/easy/api/v1/order/getMyOrder
+55169 [qtp803391062-21] ERROR webApi  - Referer:null
+55169 [qtp803391062-21] ERROR webApi  - User-Agent:okhttp/3.9.1
+55169 [qtp803391062-21] ERROR webApi  - 输入:{"msg":["{\"id\":\"admin\",\"isAdmin\":\"1\",\"loginId\":\"ldh\",\"name\":\"admin\",\"pwd\":\"ldh\",\"registerId\":null,\"sex\":null}"]}
+55170 [qtp803391062-21] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":[{\"createTime\":\"2018-04-03\",\"goodsId\":\"c77fe8e1-c188-47bd-86ab-33c032bccc3d\",\"id\":\"4a2b7b8e-547a-4abf-86b6-84135902bd6d\",\"imageId\":\"2c88cc47-f2ce-4838-a970-79c197f476d5\",\"name\":\"dge\",\"num\":0,\"price\":0,\"total\":0}],\"msg\":\"\",\"success\":true}"}
+
+
+55274 [qtp803391062-16] ERROR webApi  - URI:/easy/api/v1/order/getMyOrder
+55275 [qtp803391062-16] ERROR webApi  - Referer:null
+55275 [qtp803391062-16] ERROR webApi  - User-Agent:okhttp/3.9.1
+55275 [qtp803391062-16] ERROR webApi  - 输入:{"msg":["{\"id\":\"admin\",\"isAdmin\":\"1\",\"loginId\":\"ldh\",\"name\":\"admin\",\"pwd\":\"ldh\",\"registerId\":null,\"sex\":null}"]}
+55275 [qtp803391062-16] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":[{\"createTime\":\"2018-04-03\",\"goodsId\":\"c77fe8e1-c188-47bd-86ab-33c032bccc3d\",\"id\":\"4a2b7b8e-547a-4abf-86b6-84135902bd6d\",\"imageId\":\"2c88cc47-f2ce-4838-a970-79c197f476d5\",\"name\":\"dge\",\"num\":0,\"price\":0,\"total\":0}],\"msg\":\"\",\"success\":true}"}
+
+
+73773 [qtp803391062-17] ERROR webApi  - URI:/easy/api/v1/file/upload
+73774 [qtp803391062-17] ERROR webApi  - Referer:null
+73774 [qtp803391062-17] ERROR webApi  - User-Agent:okhttp/3.9.1
+73774 [qtp803391062-17] ERROR webApi  - 输入:{}
+73775 [qtp803391062-17] ERROR webApi  - 输出{"data":{"id":"62d7a707-a106-47d3-90e6-27c6c63ae5bb","refId":"","name":"62d7a707-a106-47d3-90e6-27c6c63ae5bb.jpg","path":"c:\\upload\\62d7a707-a106-47d3-90e6-27c6c63ae5bb.jpg","filePath":"","creator":""},"code":"200","msg":"上传成功"}
+
+
+84313 [qtp803391062-22] ERROR webApi  - URI:/easy/api/v1/goods/add
+84314 [qtp803391062-22] ERROR webApi  - Referer:null
+84314 [qtp803391062-22] ERROR webApi  - User-Agent:okhttp/3.9.1
+84314 [qtp803391062-22] ERROR webApi  - 输入:{"msg":["{\"colorName\":null,\"colorNum\":null,\"content\":null,\"creator\":null,\"id\":null,\"imagUrl\":null,\"imageId\":\"62d7a707-a106-47d3-90e6-27c6c63ae5bb\",\"name\":\"商品2\",\"price\":0.0,\"status\":1}"]}
+84314 [qtp803391062-22] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":\"1d995081-af21-4e60-9160-1c311f6610b0\",\"msg\":\"\",\"success\":true}"}
+
+
+84586 [qtp803391062-16] ERROR webApi  - URI:/easy/api/v1/goods/list
+84587 [qtp803391062-16] ERROR webApi  - Referer:null
+84587 [qtp803391062-16] ERROR webApi  - User-Agent:okhttp/3.9.1
+84588 [qtp803391062-16] ERROR webApi  - 输入:{"msg":["{\"colorName\":null,\"colorNum\":null,\"content\":null,\"creator\":null,\"id\":null,\"imagUrl\":null,\"imageId\":null,\"name\":null,\"price\":0.0,\"status\":1}"]}
+84588 [qtp803391062-16] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":[{\"createTime\":\"2018-04-03\",\"id\":\"7112c29b-7791-4c84-b086-7ea9235a92a2\",\"imageId\":\"7e24a8b2-fed6-41f5-a472-e3280704038b\",\"name\":\"huujju\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"3a94f066-6130-4130-a0dd-86ea60d5968d\",\"imageId\":\"d4b4db84-c690-4dae-bbc6-b09dd3801fe3\",\"name\":\"uuu\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"ea5b2355-b196-4235-8904-190ba4bef76b\",\"imageId\":\"d4b4db84-c690-4dae-bbc6-b09dd3801fe3\",\"name\":\"uuu\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"c77fe8e1-c188-47bd-86ab-33c032bccc3d\",\"imageId\":\"2c88cc47-f2ce-4838-a970-79c197f476d5\",\"name\":\"dge\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"1d995081-af21-4e60-9160-1c311f6610b0\",\"imageId\":\"62d7a707-a106-47d3-90e6-27c6c63ae5bb\",\"name\":\"商品2\",\"price\":0,\"status\":1}],\"msg\":\"\",\"success\":true}"}
+
+
+99518 [qtp803391062-21] ERROR webApi  - URI:/easy/api/v1/user/login
+99519 [qtp803391062-21] ERROR webApi  - Referer:null
+99520 [qtp803391062-21] ERROR webApi  - User-Agent:okhttp/3.9.1
+99520 [qtp803391062-21] ERROR webApi  - 输入:{"msg":["{\"isAdmin\":\"0\",\"loginId\":\"ldh\",\"pwd\":\"ldh\"}"]}
+99520 [qtp803391062-21] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":{\"id\":\"admin\",\"isAdmin\":\"1\",\"loginId\":\"ldh\",\"name\":\"admin\",\"pwd\":\"ldh\"},\"msg\":\"\",\"success\":true}"}
+
+
+99803 [qtp803391062-22] ERROR webApi  - URI:/easy/api/v1/goods/list
+99804 [qtp803391062-22] ERROR webApi  - Referer:null
+99804 [qtp803391062-22] ERROR webApi  - User-Agent:okhttp/3.9.1
+99804 [qtp803391062-22] ERROR webApi  - 输入:{"msg":["{\"colorName\":null,\"colorNum\":null,\"content\":null,\"creator\":null,\"id\":null,\"imagUrl\":null,\"imageId\":null,\"name\":null,\"price\":0.0,\"status\":1}"]}
+99805 [qtp803391062-22] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":[{\"createTime\":\"2018-04-03\",\"id\":\"7112c29b-7791-4c84-b086-7ea9235a92a2\",\"imageId\":\"7e24a8b2-fed6-41f5-a472-e3280704038b\",\"name\":\"huujju\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"3a94f066-6130-4130-a0dd-86ea60d5968d\",\"imageId\":\"d4b4db84-c690-4dae-bbc6-b09dd3801fe3\",\"name\":\"uuu\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"ea5b2355-b196-4235-8904-190ba4bef76b\",\"imageId\":\"d4b4db84-c690-4dae-bbc6-b09dd3801fe3\",\"name\":\"uuu\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"c77fe8e1-c188-47bd-86ab-33c032bccc3d\",\"imageId\":\"2c88cc47-f2ce-4838-a970-79c197f476d5\",\"name\":\"dge\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"1d995081-af21-4e60-9160-1c311f6610b0\",\"imageId\":\"62d7a707-a106-47d3-90e6-27c6c63ae5bb\",\"name\":\"商品2\",\"price\":0,\"status\":1}],\"msg\":\"\",\"success\":true}"}
+
+
+99842 [qtp803391062-16] ERROR webApi  - URI:/easy/api/v1/order/getMyOrder
+99842 [qtp803391062-16] ERROR webApi  - Referer:null
+99843 [qtp803391062-16] ERROR webApi  - User-Agent:okhttp/3.9.1
+99843 [qtp803391062-16] ERROR webApi  - 输入:{"msg":["{\"id\":\"admin\",\"isAdmin\":\"1\",\"loginId\":\"ldh\",\"name\":\"admin\",\"pwd\":\"ldh\",\"registerId\":null,\"sex\":null}"]}
+99843 [qtp803391062-16] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":[{\"createTime\":\"2018-04-03\",\"goodsId\":\"c77fe8e1-c188-47bd-86ab-33c032bccc3d\",\"id\":\"4a2b7b8e-547a-4abf-86b6-84135902bd6d\",\"imageId\":\"2c88cc47-f2ce-4838-a970-79c197f476d5\",\"name\":\"dge\",\"num\":0,\"price\":0,\"total\":0}],\"msg\":\"\",\"success\":true}"}
+
+
+101101 [qtp803391062-21] ERROR webApi  - URI:/easy/api/v1/order/getMyOrder
+101102 [qtp803391062-21] ERROR webApi  - Referer:null
+101103 [qtp803391062-21] ERROR webApi  - User-Agent:okhttp/3.9.1
+101103 [qtp803391062-21] ERROR webApi  - 输入:{"msg":["{\"id\":\"admin\",\"isAdmin\":\"1\",\"loginId\":\"ldh\",\"name\":\"admin\",\"pwd\":\"ldh\",\"registerId\":null,\"sex\":null}"]}
+101104 [qtp803391062-21] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":[{\"createTime\":\"2018-04-03\",\"goodsId\":\"c77fe8e1-c188-47bd-86ab-33c032bccc3d\",\"id\":\"4a2b7b8e-547a-4abf-86b6-84135902bd6d\",\"imageId\":\"2c88cc47-f2ce-4838-a970-79c197f476d5\",\"name\":\"dge\",\"num\":0,\"price\":0,\"total\":0}],\"msg\":\"\",\"success\":true}"}
+
+
+114298 [qtp803391062-20] ERROR webApi  - URI:/easy/api/v1/order/add
+114298 [qtp803391062-20] ERROR webApi  - Referer:null
+114298 [qtp803391062-20] ERROR webApi  - User-Agent:okhttp/3.9.1
+114299 [qtp803391062-20] ERROR webApi  - 输入:{"msg":["{\"goods\":null,\"order\":\"{\\\"createTime\\\":null,\\\"creator\\\":\\\"admin\\\",\\\"creatorId\\\":\\\"admin\\\",\\\"goodsId\\\":\\\"1d995081-af21-4e60-9160-1c311f6610b0\\\",\\\"id\\\":null,\\\"num\\\":2.0,\\\"status\\\":1,\\\"total\\\":0.0,\\\"type\\\":1}\"}"]}
+114299 [qtp803391062-20] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":\"9c772e12-427c-493e-98f8-4ac1f08910ab\",\"msg\":\"\",\"success\":true}"}
+
+
+114457 [qtp803391062-18] ERROR webApi  - URI:/easy/api/v1/order/getMyOrder
+114460 [qtp803391062-18] ERROR webApi  - Referer:null
+114460 [qtp803391062-18] ERROR webApi  - User-Agent:okhttp/3.9.1
+114461 [qtp803391062-18] ERROR webApi  - 输入:{"msg":["{\"id\":\"admin\",\"isAdmin\":\"1\",\"loginId\":\"ldh\",\"name\":\"admin\",\"pwd\":\"ldh\",\"registerId\":null,\"sex\":null}"]}
+114461 [qtp803391062-18] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":[{\"createTime\":\"2018-04-03\",\"goodsId\":\"c77fe8e1-c188-47bd-86ab-33c032bccc3d\",\"id\":\"4a2b7b8e-547a-4abf-86b6-84135902bd6d\",\"imageId\":\"2c88cc47-f2ce-4838-a970-79c197f476d5\",\"name\":\"dge\",\"num\":0,\"price\":0,\"total\":0},{\"createTime\":\"2018-04-03\",\"goodsId\":\"1d995081-af21-4e60-9160-1c311f6610b0\",\"id\":\"9c772e12-427c-493e-98f8-4ac1f08910ab\",\"imageId\":\"62d7a707-a106-47d3-90e6-27c6c63ae5bb\",\"name\":\"商品2\",\"num\":2,\"price\":0,\"total\":0}],\"msg\":\"\",\"success\":true}"}
+
+
+114465 [qtp803391062-17] ERROR webApi  - URI:/easy/api/v1/goods/list
+114466 [qtp803391062-17] ERROR webApi  - Referer:null
+114466 [qtp803391062-17] ERROR webApi  - User-Agent:okhttp/3.9.1
+114466 [qtp803391062-17] ERROR webApi  - 输入:{"msg":["{\"colorName\":null,\"colorNum\":null,\"content\":null,\"creator\":null,\"id\":null,\"imagUrl\":null,\"imageId\":null,\"name\":null,\"price\":0.0,\"status\":1}"]}
+114467 [qtp803391062-17] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":[{\"createTime\":\"2018-04-03\",\"id\":\"7112c29b-7791-4c84-b086-7ea9235a92a2\",\"imageId\":\"7e24a8b2-fed6-41f5-a472-e3280704038b\",\"name\":\"huujju\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"3a94f066-6130-4130-a0dd-86ea60d5968d\",\"imageId\":\"d4b4db84-c690-4dae-bbc6-b09dd3801fe3\",\"name\":\"uuu\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"ea5b2355-b196-4235-8904-190ba4bef76b\",\"imageId\":\"d4b4db84-c690-4dae-bbc6-b09dd3801fe3\",\"name\":\"uuu\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"c77fe8e1-c188-47bd-86ab-33c032bccc3d\",\"imageId\":\"2c88cc47-f2ce-4838-a970-79c197f476d5\",\"name\":\"dge\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"1d995081-af21-4e60-9160-1c311f6610b0\",\"imageId\":\"62d7a707-a106-47d3-90e6-27c6c63ae5bb\",\"name\":\"商品2\",\"price\":0,\"status\":1}],\"msg\":\"\",\"success\":true}"}
+
+
+824200 [qtp803391062-20] ERROR webApi  - URI:/easy/api/v1/user/login
+824200 [qtp803391062-20] ERROR webApi  - Referer:null
+824200 [qtp803391062-20] ERROR webApi  - User-Agent:okhttp/3.9.1
+824200 [qtp803391062-20] ERROR webApi  - 输入:{"msg":["{\"isAdmin\":\"0\",\"loginId\":\"ldh\",\"pwd\":\"ldh\"}"]}
+824200 [qtp803391062-20] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":{\"id\":\"admin\",\"isAdmin\":\"1\",\"loginId\":\"ldh\",\"name\":\"admin\",\"pwd\":\"ldh\"},\"msg\":\"\",\"success\":true}"}
+
+
+824543 [qtp803391062-18] ERROR webApi  - URI:/easy/api/v1/goods/list
+824543 [qtp803391062-18] ERROR webApi  - Referer:null
+824543 [qtp803391062-18] ERROR webApi  - User-Agent:okhttp/3.9.1
+824543 [qtp803391062-18] ERROR webApi  - 输入:{"msg":["{\"colorName\":null,\"colorNum\":null,\"content\":null,\"creator\":null,\"id\":null,\"imagUrl\":null,\"imageId\":null,\"name\":null,\"price\":0.0,\"status\":1}"]}
+824543 [qtp803391062-18] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":[{\"createTime\":\"2018-04-03\",\"id\":\"7112c29b-7791-4c84-b086-7ea9235a92a2\",\"imageId\":\"7e24a8b2-fed6-41f5-a472-e3280704038b\",\"name\":\"huujju\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"3a94f066-6130-4130-a0dd-86ea60d5968d\",\"imageId\":\"d4b4db84-c690-4dae-bbc6-b09dd3801fe3\",\"name\":\"uuu\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"ea5b2355-b196-4235-8904-190ba4bef76b\",\"imageId\":\"d4b4db84-c690-4dae-bbc6-b09dd3801fe3\",\"name\":\"uuu\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"c77fe8e1-c188-47bd-86ab-33c032bccc3d\",\"imageId\":\"2c88cc47-f2ce-4838-a970-79c197f476d5\",\"name\":\"dge\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"1d995081-af21-4e60-9160-1c311f6610b0\",\"imageId\":\"62d7a707-a106-47d3-90e6-27c6c63ae5bb\",\"name\":\"商品2\",\"price\":0,\"status\":1}],\"msg\":\"\",\"success\":true}"}
+
+
+824668 [qtp803391062-22] ERROR webApi  - URI:/easy/api/v1/order/getMyOrder
+824668 [qtp803391062-22] ERROR webApi  - Referer:null
+824684 [qtp803391062-22] ERROR webApi  - User-Agent:okhttp/3.9.1
+824684 [qtp803391062-22] ERROR webApi  - 输入:{"msg":["{\"id\":\"admin\",\"isAdmin\":\"1\",\"loginId\":\"ldh\",\"name\":\"admin\",\"pwd\":\"ldh\",\"registerId\":null,\"sex\":null}"]}
+824684 [qtp803391062-22] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":[{\"createTime\":\"2018-04-03\",\"goodsId\":\"c77fe8e1-c188-47bd-86ab-33c032bccc3d\",\"id\":\"4a2b7b8e-547a-4abf-86b6-84135902bd6d\",\"imageId\":\"2c88cc47-f2ce-4838-a970-79c197f476d5\",\"name\":\"dge\",\"num\":0,\"price\":0,\"total\":0},{\"createTime\":\"2018-04-03\",\"goodsId\":\"1d995081-af21-4e60-9160-1c311f6610b0\",\"id\":\"9c772e12-427c-493e-98f8-4ac1f08910ab\",\"imageId\":\"62d7a707-a106-47d3-90e6-27c6c63ae5bb\",\"name\":\"商品2\",\"num\":2,\"price\":0,\"total\":0}],\"msg\":\"\",\"success\":true}"}
+
+
+1005031 [qtp803391062-20] ERROR webApi  - URI:/easy/api/v1/user/login
+1005031 [qtp803391062-20] ERROR webApi  - Referer:null
+1005031 [qtp803391062-20] ERROR webApi  - User-Agent:okhttp/3.9.1
+1005031 [qtp803391062-20] ERROR webApi  - 输入:{"msg":["{\"isAdmin\":\"0\",\"loginId\":\"ldh\",\"pwd\":\"ldh\"}"]}
+1005031 [qtp803391062-20] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":{\"id\":\"admin\",\"isAdmin\":\"1\",\"loginId\":\"ldh\",\"name\":\"admin\",\"pwd\":\"ldh\"},\"msg\":\"\",\"success\":true}"}
+
+
+1005592 [qtp803391062-17] ERROR webApi  - URI:/easy/api/v1/goods/list
+1005592 [qtp803391062-17] ERROR webApi  - Referer:null
+1005592 [qtp803391062-17] ERROR webApi  - User-Agent:okhttp/3.9.1
+1005592 [qtp803391062-17] ERROR webApi  - 输入:{"msg":["{\"colorName\":null,\"colorNum\":null,\"content\":null,\"creator\":null,\"id\":null,\"imagUrl\":null,\"imageId\":null,\"name\":null,\"price\":0.0,\"status\":1}"]}
+1005592 [qtp803391062-17] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":[{\"createTime\":\"2018-04-03\",\"id\":\"7112c29b-7791-4c84-b086-7ea9235a92a2\",\"imageId\":\"7e24a8b2-fed6-41f5-a472-e3280704038b\",\"name\":\"huujju\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"3a94f066-6130-4130-a0dd-86ea60d5968d\",\"imageId\":\"d4b4db84-c690-4dae-bbc6-b09dd3801fe3\",\"name\":\"uuu\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"ea5b2355-b196-4235-8904-190ba4bef76b\",\"imageId\":\"d4b4db84-c690-4dae-bbc6-b09dd3801fe3\",\"name\":\"uuu\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"c77fe8e1-c188-47bd-86ab-33c032bccc3d\",\"imageId\":\"2c88cc47-f2ce-4838-a970-79c197f476d5\",\"name\":\"dge\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"1d995081-af21-4e60-9160-1c311f6610b0\",\"imageId\":\"62d7a707-a106-47d3-90e6-27c6c63ae5bb\",\"name\":\"商品2\",\"price\":0,\"status\":1}],\"msg\":\"\",\"success\":true}"}
+
+
+1005826 [qtp803391062-18] ERROR webApi  - URI:/easy/api/v1/order/getMyOrder
+1005826 [qtp803391062-18] ERROR webApi  - Referer:null
+1005826 [qtp803391062-18] ERROR webApi  - User-Agent:okhttp/3.9.1
+1005826 [qtp803391062-18] ERROR webApi  - 输入:{"msg":["{\"id\":\"admin\",\"isAdmin\":\"1\",\"loginId\":\"ldh\",\"name\":\"admin\",\"pwd\":\"ldh\",\"registerId\":null,\"sex\":null}"]}
+1005826 [qtp803391062-18] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":[{\"createTime\":\"2018-04-03\",\"goodsId\":\"c77fe8e1-c188-47bd-86ab-33c032bccc3d\",\"id\":\"4a2b7b8e-547a-4abf-86b6-84135902bd6d\",\"imageId\":\"2c88cc47-f2ce-4838-a970-79c197f476d5\",\"name\":\"dge\",\"num\":0,\"price\":0,\"total\":0},{\"createTime\":\"2018-04-03\",\"goodsId\":\"1d995081-af21-4e60-9160-1c311f6610b0\",\"id\":\"9c772e12-427c-493e-98f8-4ac1f08910ab\",\"imageId\":\"62d7a707-a106-47d3-90e6-27c6c63ae5bb\",\"name\":\"商品2\",\"num\":2,\"price\":0,\"total\":0}],\"msg\":\"\",\"success\":true}"}
+
+
+1005842 [qtp803391062-21] ERROR webApi  - URI:/easy/api/v1/order/getMyOrder
+1005842 [qtp803391062-21] ERROR webApi  - Referer:null
+1005842 [qtp803391062-21] ERROR webApi  - User-Agent:okhttp/3.9.1
+1005842 [qtp803391062-21] ERROR webApi  - 输入:{"msg":["{\"id\":\"admin\",\"isAdmin\":\"1\",\"loginId\":\"ldh\",\"name\":\"admin\",\"pwd\":\"ldh\",\"registerId\":null,\"sex\":null}"]}
+1005842 [qtp803391062-21] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":[{\"createTime\":\"2018-04-03\",\"goodsId\":\"c77fe8e1-c188-47bd-86ab-33c032bccc3d\",\"id\":\"4a2b7b8e-547a-4abf-86b6-84135902bd6d\",\"imageId\":\"2c88cc47-f2ce-4838-a970-79c197f476d5\",\"name\":\"dge\",\"num\":0,\"price\":0,\"total\":0},{\"createTime\":\"2018-04-03\",\"goodsId\":\"1d995081-af21-4e60-9160-1c311f6610b0\",\"id\":\"9c772e12-427c-493e-98f8-4ac1f08910ab\",\"imageId\":\"62d7a707-a106-47d3-90e6-27c6c63ae5bb\",\"name\":\"商品2\",\"num\":2,\"price\":0,\"total\":0}],\"msg\":\"\",\"success\":true}"}
+
+
+2571679 [qtp803391062-17] ERROR webApi  - URI:/easy/api/v1/goods/search
+2571680 [qtp803391062-17] ERROR webApi  - Referer:null
+2571680 [qtp803391062-17] ERROR webApi  - User-Agent:okhttp/3.9.1
+2571681 [qtp803391062-17] ERROR webApi  - 输入:{"msg":["uuu"]}
+2571681 [qtp803391062-17] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":[{\"createTime\":\"2018-04-03\",\"id\":\"3a94f066-6130-4130-a0dd-86ea60d5968d\",\"imageId\":\"d4b4db84-c690-4dae-bbc6-b09dd3801fe3\",\"name\":\"uuu\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"ea5b2355-b196-4235-8904-190ba4bef76b\",\"imageId\":\"d4b4db84-c690-4dae-bbc6-b09dd3801fe3\",\"name\":\"uuu\",\"price\":0,\"status\":1}],\"msg\":\"\",\"success\":true}"}
+
+
+2579732 [qtp803391062-22] ERROR webApi  - URI:/easy/api/v1/goods/list
+2579734 [qtp803391062-22] ERROR webApi  - Referer:null
+2579735 [qtp803391062-22] ERROR webApi  - User-Agent:okhttp/3.9.1
+2579735 [qtp803391062-22] ERROR webApi  - 输入:{"msg":["{\"colorName\":null,\"colorNum\":null,\"content\":null,\"creator\":null,\"id\":null,\"imagUrl\":null,\"imageId\":null,\"name\":null,\"price\":0.0,\"status\":1}"]}
+2579736 [qtp803391062-22] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":[{\"createTime\":\"2018-04-03\",\"id\":\"7112c29b-7791-4c84-b086-7ea9235a92a2\",\"imageId\":\"7e24a8b2-fed6-41f5-a472-e3280704038b\",\"name\":\"huujju\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"3a94f066-6130-4130-a0dd-86ea60d5968d\",\"imageId\":\"d4b4db84-c690-4dae-bbc6-b09dd3801fe3\",\"name\":\"uuu\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"ea5b2355-b196-4235-8904-190ba4bef76b\",\"imageId\":\"d4b4db84-c690-4dae-bbc6-b09dd3801fe3\",\"name\":\"uuu\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"c77fe8e1-c188-47bd-86ab-33c032bccc3d\",\"imageId\":\"2c88cc47-f2ce-4838-a970-79c197f476d5\",\"name\":\"dge\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"1d995081-af21-4e60-9160-1c311f6610b0\",\"imageId\":\"62d7a707-a106-47d3-90e6-27c6c63ae5bb\",\"name\":\"商品2\",\"price\":0,\"status\":1}],\"msg\":\"\",\"success\":true}"}
+
+
+3034755 [qtp803391062-16] ERROR webApi  - URI:/easy/api/v1/user/login
+3034756 [qtp803391062-16] ERROR webApi  - Referer:null
+3034757 [qtp803391062-16] ERROR webApi  - User-Agent:okhttp/3.9.1
+3034757 [qtp803391062-16] ERROR webApi  - 输入:{"msg":["{\"isAdmin\":\"0\",\"loginId\":\"ldh\",\"pwd\":\"ldh\"}"]}
+3034758 [qtp803391062-16] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":{\"id\":\"admin\",\"isAdmin\":\"1\",\"loginId\":\"ldh\",\"name\":\"admin\",\"pwd\":\"ldh\"},\"msg\":\"\",\"success\":true}"}
+
+
+3036298 [qtp803391062-17] ERROR webApi  - URI:/easy/api/v1/goods/list
+3036298 [qtp803391062-17] ERROR webApi  - Referer:null
+3036298 [qtp803391062-17] ERROR webApi  - User-Agent:okhttp/3.9.1
+3036299 [qtp803391062-17] ERROR webApi  - 输入:{"msg":["{\"colorName\":null,\"colorNum\":null,\"content\":null,\"creator\":null,\"id\":null,\"imagUrl\":null,\"imageId\":null,\"name\":null,\"price\":0.0,\"status\":1}"]}
+3036299 [qtp803391062-17] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":[{\"createTime\":\"2018-04-03\",\"id\":\"7112c29b-7791-4c84-b086-7ea9235a92a2\",\"imageId\":\"7e24a8b2-fed6-41f5-a472-e3280704038b\",\"name\":\"huujju\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"3a94f066-6130-4130-a0dd-86ea60d5968d\",\"imageId\":\"d4b4db84-c690-4dae-bbc6-b09dd3801fe3\",\"name\":\"uuu\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"ea5b2355-b196-4235-8904-190ba4bef76b\",\"imageId\":\"d4b4db84-c690-4dae-bbc6-b09dd3801fe3\",\"name\":\"uuu\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"c77fe8e1-c188-47bd-86ab-33c032bccc3d\",\"imageId\":\"2c88cc47-f2ce-4838-a970-79c197f476d5\",\"name\":\"dge\",\"price\":0,\"status\":1},{\"createTime\":\"2018-04-03\",\"id\":\"1d995081-af21-4e60-9160-1c311f6610b0\",\"imageId\":\"62d7a707-a106-47d3-90e6-27c6c63ae5bb\",\"name\":\"商品2\",\"price\":0,\"status\":1}],\"msg\":\"\",\"success\":true}"}
+
+
+3036516 [qtp803391062-16] ERROR webApi  - URI:/easy/api/v1/order/getMyOrder
+3036517 [qtp803391062-16] ERROR webApi  - Referer:null
+3036517 [qtp803391062-16] ERROR webApi  - User-Agent:okhttp/3.9.1
+3036517 [qtp803391062-16] ERROR webApi  - 输入:{"msg":["{\"id\":\"admin\",\"isAdmin\":\"1\",\"loginId\":\"ldh\",\"name\":\"admin\",\"pwd\":\"ldh\",\"registerId\":null,\"sex\":null}"]}
+3036518 [qtp803391062-16] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":[{\"createTime\":\"2018-04-03\",\"goodsId\":\"c77fe8e1-c188-47bd-86ab-33c032bccc3d\",\"id\":\"4a2b7b8e-547a-4abf-86b6-84135902bd6d\",\"imageId\":\"2c88cc47-f2ce-4838-a970-79c197f476d5\",\"name\":\"dge\",\"num\":0,\"price\":0,\"total\":0},{\"createTime\":\"2018-04-03\",\"goodsId\":\"1d995081-af21-4e60-9160-1c311f6610b0\",\"id\":\"9c772e12-427c-493e-98f8-4ac1f08910ab\",\"imageId\":\"62d7a707-a106-47d3-90e6-27c6c63ae5bb\",\"name\":\"商品2\",\"num\":2,\"price\":0,\"total\":0}],\"msg\":\"\",\"success\":true}"}
+
+
+3042237 [qtp803391062-21] ERROR webApi  - URI:/easy/api/v1/order/get
+3042239 [qtp803391062-21] ERROR webApi  - Referer:null
+3042239 [qtp803391062-21] ERROR webApi  - User-Agent:okhttp/3.9.1
+3042239 [qtp803391062-21] ERROR webApi  - 输入:{"msg":["{\"createTime\":null,\"creator\":null,\"creatorId\":null,\"goodsId\":null,\"id\":\"9c772e12-427c-493e-98f8-4ac1f08910ab\",\"num\":0.0,\"status\":1,\"total\":0.0,\"type\":1}"]}
+3042240 [qtp803391062-21] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":{\"goods\":\"{\\\"createTime\\\":\\\"2018-04-03\\\",\\\"id\\\":\\\"1d995081-af21-4e60-9160-1c311f6610b0\\\",\\\"imageId\\\":\\\"62d7a707-a106-47d3-90e6-27c6c63ae5bb\\\",\\\"name\\\":\\\"商品2\\\",\\\"price\\\":0,\\\"status\\\":1}\",\"order\":\"{\\\"createTime\\\":\\\"2018-04-03\\\",\\\"creator\\\":\\\"admin\\\",\\\"creatorId\\\":\\\"admin\\\",\\\"goodsId\\\":\\\"1d995081-af21-4e60-9160-1c311f6610b0\\\",\\\"id\\\":\\\"9c772e12-427c-493e-98f8-4ac1f08910ab\\\",\\\"num\\\":2,\\\"status\\\":1,\\\"total\\\":0,\\\"type\\\":1}\"},\"msg\":\"\",\"success\":true}"}
+
+
+3047443 [qtp803391062-20] ERROR webApi  - URI:/easy/api/v1/order/get
+3047445 [qtp803391062-20] ERROR webApi  - Referer:null
+3047445 [qtp803391062-20] ERROR webApi  - User-Agent:okhttp/3.9.1
+3047446 [qtp803391062-20] ERROR webApi  - 输入:{"msg":["{\"createTime\":null,\"creator\":null,\"creatorId\":null,\"goodsId\":null,\"id\":\"4a2b7b8e-547a-4abf-86b6-84135902bd6d\",\"num\":0.0,\"status\":1,\"total\":0.0,\"type\":1}"]}
+3047447 [qtp803391062-20] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":{\"goods\":\"{\\\"createTime\\\":\\\"2018-04-03\\\",\\\"id\\\":\\\"c77fe8e1-c188-47bd-86ab-33c032bccc3d\\\",\\\"imageId\\\":\\\"2c88cc47-f2ce-4838-a970-79c197f476d5\\\",\\\"name\\\":\\\"dge\\\",\\\"price\\\":0,\\\"status\\\":1}\",\"order\":\"{\\\"createTime\\\":\\\"2018-04-03\\\",\\\"creator\\\":\\\"admin\\\",\\\"creatorId\\\":\\\"admin\\\",\\\"goodsId\\\":\\\"c77fe8e1-c188-47bd-86ab-33c032bccc3d\\\",\\\"id\\\":\\\"4a2b7b8e-547a-4abf-86b6-84135902bd6d\\\",\\\"num\\\":0,\\\"status\\\":1,\\\"total\\\":0,\\\"type\\\":1}\"},\"msg\":\"\",\"success\":true}"}
+
+
+3050294 [qtp803391062-22] ERROR webApi  - URI:/easy/api/v1/order/get
+3050295 [qtp803391062-22] ERROR webApi  - Referer:null
+3050295 [qtp803391062-22] ERROR webApi  - User-Agent:okhttp/3.9.1
+3050295 [qtp803391062-22] ERROR webApi  - 输入:{"msg":["{\"createTime\":null,\"creator\":null,\"creatorId\":null,\"goodsId\":null,\"id\":\"4a2b7b8e-547a-4abf-86b6-84135902bd6d\",\"num\":0.0,\"status\":1,\"total\":0.0,\"type\":1}"]}
+3050296 [qtp803391062-22] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":{\"goods\":\"{\\\"createTime\\\":\\\"2018-04-03\\\",\\\"id\\\":\\\"c77fe8e1-c188-47bd-86ab-33c032bccc3d\\\",\\\"imageId\\\":\\\"2c88cc47-f2ce-4838-a970-79c197f476d5\\\",\\\"name\\\":\\\"dge\\\",\\\"price\\\":0,\\\"status\\\":1}\",\"order\":\"{\\\"createTime\\\":\\\"2018-04-03\\\",\\\"creator\\\":\\\"admin\\\",\\\"creatorId\\\":\\\"admin\\\",\\\"goodsId\\\":\\\"c77fe8e1-c188-47bd-86ab-33c032bccc3d\\\",\\\"id\\\":\\\"4a2b7b8e-547a-4abf-86b6-84135902bd6d\\\",\\\"num\\\":0,\\\"status\\\":1,\\\"total\\\":0,\\\"type\\\":1}\"},\"msg\":\"\",\"success\":true}"}
+
+
+3051958 [qtp803391062-18] ERROR webApi  - URI:/easy/api/v1/order/get
+3051960 [qtp803391062-18] ERROR webApi  - Referer:null
+3051961 [qtp803391062-18] ERROR webApi  - User-Agent:okhttp/3.9.1
+3051961 [qtp803391062-18] ERROR webApi  - 输入:{"msg":["{\"createTime\":null,\"creator\":null,\"creatorId\":null,\"goodsId\":null,\"id\":\"9c772e12-427c-493e-98f8-4ac1f08910ab\",\"num\":0.0,\"status\":1,\"total\":0.0,\"type\":1}"]}
+3051962 [qtp803391062-18] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":{\"goods\":\"{\\\"createTime\\\":\\\"2018-04-03\\\",\\\"id\\\":\\\"1d995081-af21-4e60-9160-1c311f6610b0\\\",\\\"imageId\\\":\\\"62d7a707-a106-47d3-90e6-27c6c63ae5bb\\\",\\\"name\\\":\\\"商品2\\\",\\\"price\\\":0,\\\"status\\\":1}\",\"order\":\"{\\\"createTime\\\":\\\"2018-04-03\\\",\\\"creator\\\":\\\"admin\\\",\\\"creatorId\\\":\\\"admin\\\",\\\"goodsId\\\":\\\"1d995081-af21-4e60-9160-1c311f6610b0\\\",\\\"id\\\":\\\"9c772e12-427c-493e-98f8-4ac1f08910ab\\\",\\\"num\\\":2,\\\"status\\\":1,\\\"total\\\":0,\\\"type\\\":1}\"},\"msg\":\"\",\"success\":true}"}
+
+
+3055814 [qtp803391062-18] ERROR webApi  - URI:/easy/api/v1/order/get
+3055814 [qtp803391062-18] ERROR webApi  - Referer:null
+3055815 [qtp803391062-18] ERROR webApi  - User-Agent:okhttp/3.9.1
+3055815 [qtp803391062-18] ERROR webApi  - 输入:{"msg":["{\"createTime\":null,\"creator\":null,\"creatorId\":null,\"goodsId\":null,\"id\":\"9c772e12-427c-493e-98f8-4ac1f08910ab\",\"num\":0.0,\"status\":1,\"total\":0.0,\"type\":1}"]}
+3055815 [qtp803391062-18] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":{\"goods\":\"{\\\"createTime\\\":\\\"2018-04-03\\\",\\\"id\\\":\\\"1d995081-af21-4e60-9160-1c311f6610b0\\\",\\\"imageId\\\":\\\"62d7a707-a106-47d3-90e6-27c6c63ae5bb\\\",\\\"name\\\":\\\"商品2\\\",\\\"price\\\":0,\\\"status\\\":1}\",\"order\":\"{\\\"createTime\\\":\\\"2018-04-03\\\",\\\"creator\\\":\\\"admin\\\",\\\"creatorId\\\":\\\"admin\\\",\\\"goodsId\\\":\\\"1d995081-af21-4e60-9160-1c311f6610b0\\\",\\\"id\\\":\\\"9c772e12-427c-493e-98f8-4ac1f08910ab\\\",\\\"num\\\":2,\\\"status\\\":1,\\\"total\\\":0,\\\"type\\\":1}\"},\"msg\":\"\",\"success\":true}"}
+
+
+3058396 [qtp803391062-16] ERROR webApi  - URI:/easy/api/v1/order/get
+3058397 [qtp803391062-16] ERROR webApi  - Referer:null
+3058398 [qtp803391062-16] ERROR webApi  - User-Agent:okhttp/3.9.1
+3058398 [qtp803391062-16] ERROR webApi  - 输入:{"msg":["{\"createTime\":null,\"creator\":null,\"creatorId\":null,\"goodsId\":null,\"id\":\"9c772e12-427c-493e-98f8-4ac1f08910ab\",\"num\":0.0,\"status\":1,\"total\":0.0,\"type\":1}"]}
+3058398 [qtp803391062-16] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":{\"goods\":\"{\\\"createTime\\\":\\\"2018-04-03\\\",\\\"id\\\":\\\"1d995081-af21-4e60-9160-1c311f6610b0\\\",\\\"imageId\\\":\\\"62d7a707-a106-47d3-90e6-27c6c63ae5bb\\\",\\\"name\\\":\\\"商品2\\\",\\\"price\\\":0,\\\"status\\\":1}\",\"order\":\"{\\\"createTime\\\":\\\"2018-04-03\\\",\\\"creator\\\":\\\"admin\\\",\\\"creatorId\\\":\\\"admin\\\",\\\"goodsId\\\":\\\"1d995081-af21-4e60-9160-1c311f6610b0\\\",\\\"id\\\":\\\"9c772e12-427c-493e-98f8-4ac1f08910ab\\\",\\\"num\\\":2,\\\"status\\\":1,\\\"total\\\":0,\\\"type\\\":1}\"},\"msg\":\"\",\"success\":true}"}
+
+
