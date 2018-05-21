@@ -6,6 +6,8 @@ this use to erp
 
 对应客户端  https://github.com/linlsyf/EaysSoftAndroid
 
+csdn 博客地址 https://blog.csdn.net/itcastldh/article/details/79386178
+
 
   实现功能
 
