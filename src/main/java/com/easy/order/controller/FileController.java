@@ -83,7 +83,6 @@ public class FileController {
      * 文件下载功能
      * @param request
      * @param response
-     * @throws Exception
      */
     @RequestMapping("/down")
     public void down(HttpServletRequest request,HttpServletResponse response,String type,String name) throws Exception{

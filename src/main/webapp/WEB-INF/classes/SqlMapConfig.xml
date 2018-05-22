@@ -49,6 +49,8 @@
         <mapper resource="sqlmap/User.xml"/>
         <mapper resource="sqlmap/RoleUser.xml"/>
         <mapper resource="sqlmap/Goods.xml"/>
+        <mapper resource="sqlmap/Comment.xml"/>
+
     </mappers>
 
 </configuration>

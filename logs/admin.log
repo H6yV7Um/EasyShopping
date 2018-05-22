@@ -5080,3 +5080,336 @@ Caused by: java.io.IOException: Could not find resource db.properties
 3058398 [qtp803391062-16] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":{\"goods\":\"{\\\"createTime\\\":\\\"2018-04-03\\\",\\\"id\\\":\\\"1d995081-af21-4e60-9160-1c311f6610b0\\\",\\\"imageId\\\":\\\"62d7a707-a106-47d3-90e6-27c6c63ae5bb\\\",\\\"name\\\":\\\"商品2\\\",\\\"price\\\":0,\\\"status\\\":1}\",\"order\":\"{\\\"createTime\\\":\\\"2018-04-03\\\",\\\"creator\\\":\\\"admin\\\",\\\"creatorId\\\":\\\"admin\\\",\\\"goodsId\\\":\\\"1d995081-af21-4e60-9160-1c311f6610b0\\\",\\\"id\\\":\\\"9c772e12-427c-493e-98f8-4ac1f08910ab\\\",\\\"num\\\":2,\\\"status\\\":1,\\\"total\\\":0,\\\"type\\\":1}\"},\"msg\":\"\",\"success\":true}"}
 
 
+0    [main] INFO  org.eclipse.jetty.server.Server  - jetty-8.1.16.v20140903
+8331 [main] INFO  /easy  - Set web app root system property: 'webapp.root' = [D:\EasyServer\src\main\webapp]
+8573 [main] INFO  /easy  - Initializing Spring FrameworkServlet 'HelloWeb'
+8582 [main] INFO  org.springframework.web.servlet.DispatcherServlet  - FrameworkServlet 'HelloWeb': initialization started
+8613 [main] INFO  org.springframework.web.context.support.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'HelloWeb-servlet': startup date [Wed May 16 15:19:17 CST 2018]; root of context hierarchy
+8678 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from ServletContext resource [/WEB-INF/HelloWeb-servlet.xml]
+9224 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory  - Overriding bean definition for bean 'mvcContentNegotiationManager': replacing [Root bean: class [org.springframework.web.accept.ContentNegotiationManagerFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.accept.ContentNegotiationManagerFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+9225 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory  - Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+9232 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory  - Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter': replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+9233 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory  - Overriding bean definition for bean 'mvcUriComponentsContributor': replacing [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+9690 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/home]}" onto public java.lang.String com.easy.common.controller.HomeController.home() throws java.lang.Exception
+9698 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/Role/add]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.RoleController.add(java.util.Map) throws java.lang.Exception
+9699 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/Role/remove]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.RoleController.remove(java.util.Map) throws java.lang.Exception
+9699 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/Role/get]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.RoleController.get(java.util.Map) throws java.lang.Exception
+9699 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/Role/list],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.RoleController.list() throws java.lang.Exception
+9700 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/Role/update]}" onto public java.lang.String com.easy.human.controller.RoleController.update(java.util.Map) throws java.lang.Exception
+9705 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/RoleUser/add]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.RoleUserController.add(java.util.Map) throws java.lang.Exception
+9705 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/RoleUser/remove]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.RoleUserController.remove(java.util.Map) throws java.lang.Exception
+9706 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/RoleUser/get]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.RoleUserController.get(java.util.Map) throws java.lang.Exception
+9706 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/RoleUser/list],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.RoleUserController.list() throws java.lang.Exception
+9706 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/RoleUser/update]}" onto public java.lang.String com.easy.human.controller.RoleUserController.update(java.util.Map) throws java.lang.Exception
+9717 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/user/add],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.UserController.add(java.util.Map) throws java.lang.Exception
+9718 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/user/remove],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.UserController.remove(java.util.Map) throws java.lang.Exception
+9718 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/user/get],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.UserController.get(java.util.Map) throws java.lang.Exception
+9718 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/user/register],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.UserController.register(java.util.Map) throws java.lang.Exception
+9719 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/user/list],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.UserController.list() throws java.lang.Exception
+9719 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/user/update],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.easy.human.controller.UserController.update(java.util.Map) throws java.lang.Exception
+9720 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/user/login],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.UserController.login(java.util.Map) throws java.lang.Exception
+9720 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/user/checkUserExit],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.UserController.checkUserExit(java.util.Map) throws java.lang.Exception
+9726 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/file/get]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.FileController.get(java.util.Map) throws java.lang.Exception
+9727 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/file/upload]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.FileController.uploadFile(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest) throws java.io.UnsupportedEncodingException
+9728 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/file/down]}" onto public void com.easy.order.controller.FileController.down(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String) throws java.lang.Exception
+9728 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/file/downApk]}" onto public void com.easy.order.controller.FileController.downApk(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+9737 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/goods/add],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.GoodsController.add(java.lang.String) throws java.lang.Exception
+9738 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/goods/remove],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.GoodsController.remove(java.util.Map) throws java.lang.Exception
+9738 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/goods/get],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.GoodsController.get(java.lang.String) throws java.lang.Exception
+9738 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/goods/list],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.GoodsController.list() throws java.lang.Exception
+9739 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/goods/search],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.GoodsController.search(java.util.Map) throws java.lang.Exception
+9739 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/goods/update],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.easy.order.controller.GoodsController.update(java.lang.String) throws java.lang.Exception
+9739 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/goods/getOrderedList],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.GoodsController.getOrderedList() throws java.lang.Exception
+9747 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/order/add],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.OrderController.add(java.util.Map) throws java.lang.Exception
+9747 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/order/remove],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.OrderController.remove(java.util.Map) throws java.lang.Exception
+9748 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/order/get],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.OrderController.get(java.util.Map) throws java.lang.Exception
+9748 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/order/list],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.OrderController.list() throws java.lang.Exception
+9748 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/order/update],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.easy.order.controller.OrderController.update(java.util.Map) throws java.lang.Exception
+9748 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/order/getSign],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.OrderController.getSign() throws java.lang.Exception
+9749 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/order/pay],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.OrderController.pay() throws java.lang.Exception
+9749 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/order/getMyOrder],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.OrderController.getMyOrder(java.util.Map) throws java.lang.Exception
+9749 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/order/listOrdered],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.OrderController.getOrdered() throws java.lang.Exception
+9750 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/updateVerson/down]}" onto public java.lang.String com.easy.order.controller.UpdateVersonController.download(java.lang.String,javax.servlet.http.HttpServletRequest) throws java.io.UnsupportedEncodingException
+9754 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/shopCart/add]}" onto public com.easy.spring.response.MBYViewModel com.easy.shop.controller.ShopCartController.add(java.util.Map) throws java.lang.Exception
+9754 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/shopCart/remove]}" onto public com.easy.spring.response.MBYViewModel com.easy.shop.controller.ShopCartController.remove(java.util.Map) throws java.lang.Exception
+9755 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/shopCart/get]}" onto public com.easy.spring.response.MBYViewModel com.easy.shop.controller.ShopCartController.get(java.util.Map) throws java.lang.Exception
+9755 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/shopCart/list],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.shop.controller.ShopCartController.list() throws java.lang.Exception
+9756 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/shopCart/update]}" onto public java.lang.String com.easy.shop.controller.ShopCartController.update(java.util.Map) throws java.lang.Exception
+9756 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/shopCart/getOrderedList],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.shop.controller.ShopCartController.getOrderedList() throws java.lang.Exception
+9756 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/shopCart/pay]}" onto public com.easy.spring.response.MBYViewModel com.easy.shop.controller.ShopCartController.pay(java.util.Map) throws java.lang.Exception
+10350 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'HelloWeb-servlet': startup date [Wed May 16 15:19:17 CST 2018]; root of context hierarchy
+10427 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'HelloWeb-servlet': startup date [Wed May 16 15:19:17 CST 2018]; root of context hierarchy
+10647 [main] INFO  org.springframework.web.servlet.DispatcherServlet  - FrameworkServlet 'HelloWeb': initialization completed in 2065 ms
+10690 [main] INFO  org.eclipse.jetty.server.AbstractConnector  - Started SelectChannelConnector@0.0.0.0:8090
+0    [main] INFO  org.eclipse.jetty.server.Server  - jetty-8.1.16.v20140903
+3897 [main] INFO  /easy  - Set web app root system property: 'webapp.root' = [D:\EasyServer\src\main\webapp]
+4102 [main] INFO  /easy  - Initializing Spring FrameworkServlet 'HelloWeb'
+4102 [main] INFO  org.springframework.web.servlet.DispatcherServlet  - FrameworkServlet 'HelloWeb': initialization started
+4135 [main] INFO  org.springframework.web.context.support.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'HelloWeb-servlet': startup date [Tue May 22 11:10:57 CST 2018]; root of context hierarchy
+4184 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from ServletContext resource [/WEB-INF/HelloWeb-servlet.xml]
+4663 [main] ERROR org.springframework.web.servlet.DispatcherServlet  - Context initialization failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from ServletContext resource [/WEB-INF/HelloWeb-servlet.xml]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'goodsController' for bean class [com.easy.order.controller.GoodsController] conflicts with existing, non-compatible bean definition of same name and class [com.easy.order.controller.CommentController]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:414)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:541)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:452)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:664)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:630)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:678)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:549)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:490)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:532)
+	at org.eclipse.jetty.servlet.ServletHolder.doStart(ServletHolder.java:344)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:791)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1242)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:717)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:494)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:282)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.RunJetty.main(RunJetty.java:19)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'goodsController' for bean class [com.easy.order.controller.GoodsController] conflicts with existing, non-compatible bean definition of same name and class [com.easy.order.controller.CommentController]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:320)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:259)
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.parse(ComponentScanBeanDefinitionParser.java:87)
+	at org.springframework.beans.factory.xml.NamespaceHandlerSupport.parse(NamespaceHandlerSupport.java:74)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1427)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1417)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:174)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:144)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:100)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:510)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:392)
+	... 30 more
+4678 [main] WARN  /easy  - unavailable
+org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from ServletContext resource [/WEB-INF/HelloWeb-servlet.xml]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'goodsController' for bean class [com.easy.order.controller.GoodsController] conflicts with existing, non-compatible bean definition of same name and class [com.easy.order.controller.CommentController]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:414)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:541)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:452)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:664)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:630)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:678)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:549)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:490)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:532)
+	at org.eclipse.jetty.servlet.ServletHolder.doStart(ServletHolder.java:344)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:791)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1242)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:717)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:494)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:282)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.RunJetty.main(RunJetty.java:19)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'goodsController' for bean class [com.easy.order.controller.GoodsController] conflicts with existing, non-compatible bean definition of same name and class [com.easy.order.controller.CommentController]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:320)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:259)
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.parse(ComponentScanBeanDefinitionParser.java:87)
+	at org.springframework.beans.factory.xml.NamespaceHandlerSupport.parse(NamespaceHandlerSupport.java:74)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1427)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1417)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:174)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:144)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:100)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:510)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:392)
+	... 30 more
+4681 [main] WARN  org.eclipse.jetty.util.component.AbstractLifeCycle  - FAILED HelloWeb: javax.servlet.ServletException: HelloWeb
+javax.servlet.ServletException: HelloWeb
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:553)
+	at org.eclipse.jetty.servlet.ServletHolder.doStart(ServletHolder.java:344)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:791)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1242)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:717)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:494)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:282)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.RunJetty.main(RunJetty.java:19)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from ServletContext resource [/WEB-INF/HelloWeb-servlet.xml]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'goodsController' for bean class [com.easy.order.controller.GoodsController] conflicts with existing, non-compatible bean definition of same name and class [com.easy.order.controller.CommentController]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:414)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:541)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:452)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:664)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:630)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:678)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:549)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:490)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:532)
+	... 12 more
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'goodsController' for bean class [com.easy.order.controller.GoodsController] conflicts with existing, non-compatible bean definition of same name and class [com.easy.order.controller.CommentController]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:320)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:259)
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.parse(ComponentScanBeanDefinitionParser.java:87)
+	at org.springframework.beans.factory.xml.NamespaceHandlerSupport.parse(NamespaceHandlerSupport.java:74)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1427)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1417)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:174)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:144)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:100)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:510)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:392)
+	... 30 more
+4685 [main] WARN  org.eclipse.jetty.webapp.WebAppContext  - Failed startup of context o.e.j.w.WebAppContext{/easy,file:/D:/EasyServer/src/main/webapp/}
+javax.servlet.ServletException: HelloWeb
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:553)
+	at org.eclipse.jetty.servlet.ServletHolder.doStart(ServletHolder.java:344)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:791)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1242)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:717)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:494)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:282)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.RunJetty.main(RunJetty.java:19)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from ServletContext resource [/WEB-INF/HelloWeb-servlet.xml]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'goodsController' for bean class [com.easy.order.controller.GoodsController] conflicts with existing, non-compatible bean definition of same name and class [com.easy.order.controller.CommentController]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:414)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:541)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:452)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:664)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:630)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:678)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:549)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:490)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:532)
+	... 12 more
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'goodsController' for bean class [com.easy.order.controller.GoodsController] conflicts with existing, non-compatible bean definition of same name and class [com.easy.order.controller.CommentController]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:320)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:259)
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.parse(ComponentScanBeanDefinitionParser.java:87)
+	at org.springframework.beans.factory.xml.NamespaceHandlerSupport.parse(NamespaceHandlerSupport.java:74)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1427)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1417)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:174)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:144)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:100)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:510)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:392)
+	... 30 more
+4730 [main] INFO  org.eclipse.jetty.server.AbstractConnector  - Started SelectChannelConnector@0.0.0.0:8090
+0    [main] INFO  org.eclipse.jetty.server.Server  - jetty-8.1.16.v20140903
+3338 [main] INFO  /easy  - Set web app root system property: 'webapp.root' = [D:\EasyServer\src\main\webapp]
+3513 [main] INFO  /easy  - Initializing Spring FrameworkServlet 'HelloWeb'
+3513 [main] INFO  org.springframework.web.servlet.DispatcherServlet  - FrameworkServlet 'HelloWeb': initialization started
+3543 [main] INFO  org.springframework.web.context.support.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'HelloWeb-servlet': startup date [Tue May 22 11:11:52 CST 2018]; root of context hierarchy
+3604 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from ServletContext resource [/WEB-INF/HelloWeb-servlet.xml]
+3972 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory  - Overriding bean definition for bean 'mvcContentNegotiationManager': replacing [Root bean: class [org.springframework.web.accept.ContentNegotiationManagerFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.accept.ContentNegotiationManagerFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+3973 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory  - Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+3981 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory  - Overriding bean definition for bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter': replacing [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+3982 [main] INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory  - Overriding bean definition for bean 'mvcUriComponentsContributor': replacing [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.web.servlet.config.AnnotationDrivenBeanDefinitionParser$CompositeUriComponentsContributorFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+4321 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/home]}" onto public java.lang.String com.easy.common.controller.HomeController.home() throws java.lang.Exception
+4328 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/Role/add]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.RoleController.add(java.util.Map) throws java.lang.Exception
+4328 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/Role/remove]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.RoleController.remove(java.util.Map) throws java.lang.Exception
+4329 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/Role/get]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.RoleController.get(java.util.Map) throws java.lang.Exception
+4329 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/Role/list],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.RoleController.list() throws java.lang.Exception
+4329 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/Role/update]}" onto public java.lang.String com.easy.human.controller.RoleController.update(java.util.Map) throws java.lang.Exception
+4333 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/RoleUser/add]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.RoleUserController.add(java.util.Map) throws java.lang.Exception
+4333 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/RoleUser/remove]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.RoleUserController.remove(java.util.Map) throws java.lang.Exception
+4334 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/RoleUser/get]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.RoleUserController.get(java.util.Map) throws java.lang.Exception
+4334 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/RoleUser/list],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.RoleUserController.list() throws java.lang.Exception
+4334 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/RoleUser/update]}" onto public java.lang.String com.easy.human.controller.RoleUserController.update(java.util.Map) throws java.lang.Exception
+4341 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/user/add],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.UserController.add(java.util.Map) throws java.lang.Exception
+4342 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/user/remove],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.UserController.remove(java.util.Map) throws java.lang.Exception
+4342 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/user/get],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.UserController.get(java.util.Map) throws java.lang.Exception
+4343 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/user/register],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.UserController.register(java.util.Map) throws java.lang.Exception
+4343 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/user/list],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.UserController.list() throws java.lang.Exception
+4343 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/user/update],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.easy.human.controller.UserController.update(java.util.Map) throws java.lang.Exception
+4344 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/user/login],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.UserController.login(java.util.Map) throws java.lang.Exception
+4344 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/user/checkUserExit],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.human.controller.UserController.checkUserExit(java.util.Map) throws java.lang.Exception
+4351 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/comment/add],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.CommentController.add(java.lang.String) throws java.lang.Exception
+4351 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/comment/remove],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.CommentController.remove(java.util.Map) throws java.lang.Exception
+4351 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/comment/get],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.CommentController.get(java.lang.String) throws java.lang.Exception
+4352 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/comment/list],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.CommentController.list() throws java.lang.Exception
+4352 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/comment/search],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.CommentController.search(java.util.Map) throws java.lang.Exception
+4353 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/comment/update],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.easy.order.controller.CommentController.update(java.lang.String) throws java.lang.Exception
+4353 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/comment/getOrderedList],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.CommentController.getOrderedList() throws java.lang.Exception
+4357 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/file/get]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.FileController.get(java.util.Map) throws java.lang.Exception
+4358 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/file/upload]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.FileController.uploadFile(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest) throws java.io.UnsupportedEncodingException
+4358 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/file/down]}" onto public void com.easy.order.controller.FileController.down(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String) throws java.lang.Exception
+4359 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/file/downApk]}" onto public void com.easy.order.controller.FileController.downApk(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+4363 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/goods/add],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.GoodsController.add(java.lang.String) throws java.lang.Exception
+4364 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/goods/remove],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.GoodsController.remove(java.util.Map) throws java.lang.Exception
+4364 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/goods/get],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.GoodsController.get(java.lang.String) throws java.lang.Exception
+4364 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/goods/list],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.GoodsController.list() throws java.lang.Exception
+4365 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/goods/search],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.GoodsController.search(java.util.Map) throws java.lang.Exception
+4365 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/goods/update],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.easy.order.controller.GoodsController.update(java.lang.String) throws java.lang.Exception
+4365 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/goods/getOrderedList],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.GoodsController.getOrderedList() throws java.lang.Exception
+4371 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/order/add],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.OrderController.add(java.util.Map) throws java.lang.Exception
+4371 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/order/remove],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.OrderController.remove(java.util.Map) throws java.lang.Exception
+4372 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/order/get],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.OrderController.get(java.util.Map) throws java.lang.Exception
+4372 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/order/list],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.OrderController.list() throws java.lang.Exception
+4372 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/order/update],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.easy.order.controller.OrderController.update(java.util.Map) throws java.lang.Exception
+4372 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/order/getSign],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.OrderController.getSign() throws java.lang.Exception
+4373 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/order/listOrdered],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.OrderController.getOrdered() throws java.lang.Exception
+4373 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/order/pay],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.OrderController.pay() throws java.lang.Exception
+4373 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/order/getMyOrder],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.order.controller.OrderController.getMyOrder(java.util.Map) throws java.lang.Exception
+4374 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/updateVerson/down]}" onto public java.lang.String com.easy.order.controller.UpdateVersonController.download(java.lang.String,javax.servlet.http.HttpServletRequest) throws java.io.UnsupportedEncodingException
+4377 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/shopCart/add]}" onto public com.easy.spring.response.MBYViewModel com.easy.shop.controller.ShopCartController.add(java.util.Map) throws java.lang.Exception
+4377 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/shopCart/remove]}" onto public com.easy.spring.response.MBYViewModel com.easy.shop.controller.ShopCartController.remove(java.util.Map) throws java.lang.Exception
+4377 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/shopCart/get]}" onto public com.easy.spring.response.MBYViewModel com.easy.shop.controller.ShopCartController.get(java.util.Map) throws java.lang.Exception
+4378 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/shopCart/list],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.shop.controller.ShopCartController.list() throws java.lang.Exception
+4378 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/shopCart/update]}" onto public java.lang.String com.easy.shop.controller.ShopCartController.update(java.util.Map) throws java.lang.Exception
+4378 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/shopCart/pay]}" onto public com.easy.spring.response.MBYViewModel com.easy.shop.controller.ShopCartController.pay(java.util.Map) throws java.lang.Exception
+4379 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping  - Mapped "{[/api/v1/shopCart/getOrderedList],produces=[application/json;charset=UTF-8]}" onto public com.easy.spring.response.MBYViewModel com.easy.shop.controller.ShopCartController.getOrderedList() throws java.lang.Exception
+4855 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'HelloWeb-servlet': startup date [Tue May 22 11:11:52 CST 2018]; root of context hierarchy
+4911 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'HelloWeb-servlet': startup date [Tue May 22 11:11:52 CST 2018]; root of context hierarchy
+5114 [main] INFO  org.springframework.web.servlet.DispatcherServlet  - FrameworkServlet 'HelloWeb': initialization completed in 1601 ms
+5146 [main] INFO  org.eclipse.jetty.server.AbstractConnector  - Started SelectChannelConnector@0.0.0.0:8090
+87462 [qtp162198005-19] ERROR webApi  - URI:/easy/api/v1/comment/list
+87462 [qtp162198005-19] ERROR webApi  - Referer:null
+87463 [qtp162198005-19] ERROR webApi  - User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+87465 [qtp162198005-19] ERROR webApi  - 输入:{}
+87465 [qtp162198005-19] ERROR webApi  - 输出{"code":"200","msg":"{\"code\":200,\"data\":[{\"content\":\"testcomter1\",\"id\":\"eer\"}],\"msg\":\"\",\"success\":true}"}
+
+
