@@ -10,10 +10,28 @@ Target Server Type    : MYSQL
 Target Server Version : 50528
 File Encoding         : 65001
 
-Date: 2018-03-23 16:08:23
+Date: 2018-05-22 11:13:58
 */
 
 SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for `comment`
+-- ----------------------------
+DROP TABLE IF EXISTS `comment`;
+CREATE TABLE `comment` (
+  `id` text,
+  `content` text,
+  `email` text,
+  `imgId` text,
+  `title` text,
+  `createTime` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='意见';
+
+-- ----------------------------
+-- Records of comment
+-- ----------------------------
+INSERT INTO `comment` VALUES ('eer', 'testcomter1', null, null, null, null);
 
 -- ----------------------------
 -- Table structure for `filelist`
@@ -32,26 +50,10 @@ CREATE TABLE `filelist` (
 -- ----------------------------
 -- Records of filelist
 -- ----------------------------
-INSERT INTO `filelist` VALUES ('26edff73-a100-4f3b-bfa1-e897f79178c1', '81ac8e2f-3780-41c2-aa72-b1c1fb314ce2', null, '26edff73-a100-4f3b-bfa1-e897f79178c1.jpg', null, null, null);
-INSERT INTO `filelist` VALUES ('9a8a64ce-8ba2-4869-a7e6-2e7e49b8711c', '4d49706b-4ab5-4c0d-8625-fe9923c3806d', null, '9a8a64ce-8ba2-4869-a7e6-2e7e49b8711c.jpg', null, null, null);
-INSERT INTO `filelist` VALUES ('881b80c1-f970-4b3e-b001-7ab72cda1e10', null, null, '881b80c1-f970-4b3e-b001-7ab72cda1e10.jpg', null, null, null);
-INSERT INTO `filelist` VALUES ('d5a1d66b-5a67-437b-91df-9bd7a62d6d76', '2b9350c7-ee4d-40b1-b23d-96e8574d7b43', null, 'd5a1d66b-5a67-437b-91df-9bd7a62d6d76.jpg', null, null, null);
-INSERT INTO `filelist` VALUES ('0d818d5c-e6fa-42f5-9540-43bc99ae4069', '3ee3dff8-5ffe-47a9-90ba-a3653d8cfa39', null, '0d818d5c-e6fa-42f5-9540-43bc99ae4069.jpg', null, null, null);
-INSERT INTO `filelist` VALUES ('56dff3a1-081b-4067-b9ff-ba66ab1482ba', '4df94b59-8bc9-486b-977a-e894cf84cdb8', null, '56dff3a1-081b-4067-b9ff-ba66ab1482ba.jpg', null, null, null);
-INSERT INTO `filelist` VALUES ('9cb00914-1d2f-429e-937d-9a3a81b97c7a', '7b96b5f1-2ca2-4ee4-a79c-db12f3be0a31', null, '9cb00914-1d2f-429e-937d-9a3a81b97c7a.jpg', null, null, null);
-INSERT INTO `filelist` VALUES ('d2ce4da5-3f91-450d-8950-36521f28e449', '9564b528-9070-4cad-80f1-5b158ff11b9c', null, 'd2ce4da5-3f91-450d-8950-36521f28e449.jpg', null, null, null);
-INSERT INTO `filelist` VALUES ('9a1fd6eb-4909-4b17-8ee2-c679a9781c6c', null, null, '9a1fd6eb-4909-4b17-8ee2-c679a9781c6c.jpg', null, null, null);
-INSERT INTO `filelist` VALUES ('545c3e62-b114-42b3-ad00-3b069dc12bb5', null, null, '545c3e62-b114-42b3-ad00-3b069dc12bb5.jpg', null, null, null);
-INSERT INTO `filelist` VALUES ('5422541e-abd7-41c9-95c7-990ace683031', '80f51763-2180-4d01-ac54-c9799a4b2d50', null, '5422541e-abd7-41c9-95c7-990ace683031.jpg', null, null, null);
-INSERT INTO `filelist` VALUES ('07146d30-f372-4cc0-ae2a-a0f0e13fbf9c', '892bdeae-cbbf-4138-b20a-8270ed871c47', null, '07146d30-f372-4cc0-ae2a-a0f0e13fbf9c.jpg', null, null, null);
-INSERT INTO `filelist` VALUES ('abb12b6f-4efb-46a4-90ae-13bc2d88983d', 'aa274027-4a63-457a-8ee7-81edc9269d88', null, 'abb12b6f-4efb-46a4-90ae-13bc2d88983d.jpg', null, null, null);
-INSERT INTO `filelist` VALUES ('13bce26d-210a-4da8-894f-c98acab7ccee', 'a32c7091-f5f5-4952-9297-665ccecf36e6', null, '13bce26d-210a-4da8-894f-c98acab7ccee.jpg', null, null, null);
-INSERT INTO `filelist` VALUES ('5f21ea23-ab55-4183-ab40-3462b086883b', null, null, '5f21ea23-ab55-4183-ab40-3462b086883b.jpg', null, null, null);
-INSERT INTO `filelist` VALUES ('f4e8850c-2292-4f39-b6c2-a7e4b14c2c73', '5bc8b4e8-94b5-4a58-a128-7e815a02425d', null, 'f4e8850c-2292-4f39-b6c2-a7e4b14c2c73.jpg', null, null, null);
-INSERT INTO `filelist` VALUES ('9dbfbdc7-d958-42b3-ada5-3be7710be05d', 'd157a88a-1978-4e76-ba3c-5fa5009a4605', null, '9dbfbdc7-d958-42b3-ada5-3be7710be05d.png', null, null, null);
-INSERT INTO `filelist` VALUES ('67d2b514-f650-4476-ab24-7ed1f4c61bbf', '11d716eb-d3c1-4baa-8fc1-7b8eeca6395e', null, '67d2b514-f650-4476-ab24-7ed1f4c61bbf.jpg', null, null, null);
-INSERT INTO `filelist` VALUES ('11fa61a1-8756-430d-9d47-19bfcf2c45c1', 'e424343d-592e-4049-a77e-f13b7f4084fc', null, '11fa61a1-8756-430d-9d47-19bfcf2c45c1.jpg', null, null, null);
-INSERT INTO `filelist` VALUES ('c0174d7a-c288-401f-a3a6-a8eca863e00a', '3fd961c0-25e3-43de-8810-f285376ad1be', null, 'c0174d7a-c288-401f-a3a6-a8eca863e00a.jpg', null, null, null);
+INSERT INTO `filelist` VALUES ('7e24a8b2-fed6-41f5-a472-e3280704038b', '7112c29b-7791-4c84-b086-7ea9235a92a2', null, '7e24a8b2-fed6-41f5-a472-e3280704038b.png', null, null, null);
+INSERT INTO `filelist` VALUES ('d4b4db84-c690-4dae-bbc6-b09dd3801fe3', 'ea5b2355-b196-4235-8904-190ba4bef76b', null, 'd4b4db84-c690-4dae-bbc6-b09dd3801fe3.jpg', null, null, null);
+INSERT INTO `filelist` VALUES ('2c88cc47-f2ce-4838-a970-79c197f476d5', 'c77fe8e1-c188-47bd-86ab-33c032bccc3d', null, '2c88cc47-f2ce-4838-a970-79c197f476d5.jpg', null, null, null);
+INSERT INTO `filelist` VALUES ('62d7a707-a106-47d3-90e6-27c6c63ae5bb', '1d995081-af21-4e60-9160-1c311f6610b0', null, '62d7a707-a106-47d3-90e6-27c6c63ae5bb.jpg', null, null, null);
 
 -- ----------------------------
 -- Table structure for `goods`
@@ -74,9 +76,11 @@ CREATE TABLE `goods` (
 -- ----------------------------
 -- Records of goods
 -- ----------------------------
-INSERT INTO `goods` VALUES ('11d716eb-d3c1-4baa-8fc1-7b8eeca6395e', 'ui还好', '67d2b514-f650-4476-ab24-7ed1f4c61bbf', null, null, null, '0', null, '2018-03-22', null, '1');
-INSERT INTO `goods` VALUES ('e424343d-592e-4049-a77e-f13b7f4084fc', '肉', '11fa61a1-8756-430d-9d47-19bfcf2c45c1', null, null, null, '0', null, '2018-03-22', null, '1');
-INSERT INTO `goods` VALUES ('3fd961c0-25e3-43de-8810-f285376ad1be', '试试看', 'c0174d7a-c288-401f-a3a6-a8eca863e00a', null, null, null, '0', null, '2018-03-22', null, '1');
+INSERT INTO `goods` VALUES ('7112c29b-7791-4c84-b086-7ea9235a92a2', 'huujju', '7e24a8b2-fed6-41f5-a472-e3280704038b', null, null, null, '0', null, '2018-04-03', null, '1');
+INSERT INTO `goods` VALUES ('3a94f066-6130-4130-a0dd-86ea60d5968d', 'uuu', 'd4b4db84-c690-4dae-bbc6-b09dd3801fe3', null, null, null, '0', null, '2018-04-03', null, '1');
+INSERT INTO `goods` VALUES ('ea5b2355-b196-4235-8904-190ba4bef76b', 'uuu', 'd4b4db84-c690-4dae-bbc6-b09dd3801fe3', null, null, null, '0', null, '2018-04-03', null, '1');
+INSERT INTO `goods` VALUES ('c77fe8e1-c188-47bd-86ab-33c032bccc3d', 'dge', '2c88cc47-f2ce-4838-a970-79c197f476d5', null, null, null, '0', null, '2018-04-03', null, '1');
+INSERT INTO `goods` VALUES ('1d995081-af21-4e60-9160-1c311f6610b0', '商品2', '62d7a707-a106-47d3-90e6-27c6c63ae5bb', null, null, null, '0', null, '2018-04-03', null, '1');
 
 -- ----------------------------
 -- Table structure for `role`
@@ -146,9 +150,8 @@ CREATE TABLE `shoporder` (
 -- ----------------------------
 -- Records of shoporder
 -- ----------------------------
-INSERT INTO `shoporder` VALUES ('21f350ef-cc77-45cb-bbbf-1ccded832246', '11d716eb-d3c1-4baa-8fc1-7b8eeca6395e', '1', 'admin', '2018-03-22', 'admin', '0', '0', '3');
-INSERT INTO `shoporder` VALUES ('1261fa3a-2d56-4f13-bf29-d2292f4a41f9', 'e424343d-592e-4049-a77e-f13b7f4084fc', '1', 'admin', '2018-03-22', 'admin', '0', '0', '3');
-INSERT INTO `shoporder` VALUES ('9ad909cd-25fe-4b49-911b-f081195c70d1', '3fd961c0-25e3-43de-8810-f285376ad1be', '1', 'admin', '2018-03-22', 'admin', '0', '0', '3');
+INSERT INTO `shoporder` VALUES ('4a2b7b8e-547a-4abf-86b6-84135902bd6d', 'c77fe8e1-c188-47bd-86ab-33c032bccc3d', '1', 'admin', '2018-04-03', 'admin', '0', '0', '1');
+INSERT INTO `shoporder` VALUES ('9c772e12-427c-493e-98f8-4ac1f08910ab', '1d995081-af21-4e60-9160-1c311f6610b0', '1', 'admin', '2018-04-03', 'admin', '0', '2', '1');
 
 -- ----------------------------
 -- Table structure for `user`
@@ -174,3 +177,4 @@ INSERT INTO `user` VALUES ('test2', 'test2', null, null, null, 'test2', '123', '
 INSERT INTO `user` VALUES ('wet', '1', null, null, null, null, 'a', 'a');
 INSERT INTO `user` VALUES ('admin', 'admin', null, null, null, null, 'ldh', 'ldh');
 INSERT INTO `user` VALUES ('a349881c-e8c4-4e0d-a9dd-bc9726e680c2', '然后给', null, null, null, null, 'a123456', '15217636960');
+INSERT INTO `user` VALUES ('王二娃4', '1', null, null, null, null, '1', '1');
