@@ -6,20 +6,20 @@
 <!-- namespace命名空间，作用就是对sql进行分类化管理，理解sql隔离
 注意：使用mapper代理方法开发，namespace有特殊重要的作用
 -->
-<mapper namespace="com.easy.human.dao.mapper.UserMapper">
+<mapper namespace="easy.human.dao.mapper.UserMapper">
 
     <!-- 在 映射文件中配置很多sql语句 -->
     <!-- 需求：通过id查询用户表的记录 -->
 
 
-    <select id="get" parameterType="string" resultType="com.easy.human.dao.bean.User">
+    <select id="get" parameterType="string" resultType="easy.human.dao.bean.User">
         SELECT * FROM User WHERE id=#{id}
     </select>
-    <select id="getByRegisterId" parameterType="string" resultType="com.easy.human.dao.bean.User">
+    <select id="getByRegisterId" parameterType="string" resultType="easy.human.dao.bean.User">
         SELECT * FROM User WHERE registerId=#{registerId}
 
     </select>
-    <select id="getByLoginId" parameterType="string" resultType="com.easy.human.dao.bean.User">
+    <select id="getByLoginId" parameterType="string" resultType="easy.human.dao.bean.User">
       select *,
 (case  when (select count(*) from roleuser  c where roleId =(select id from role b where b.code=1)
 and  c.userId=a.id)>0  then 1 else 0 end
@@ -27,15 +27,15 @@ and  c.userId=a.id)>0  then 1 else 0 end
  from user a where loginId=#{loginId}
 
     </select>
-    <select id="list"  resultType="com.easy.human.dao.bean.User">
+    <select id="list"  resultType="easy.human.dao.bean.User">
         SELECT *  FROM User
     </select>
 
-    <insert id="add" parameterType="com.easy.human.dao.bean.User">
+    <insert id="add" parameterType="easy.human.dao.bean.User">
         insert into User(id,name,registerId,loginId,pwd)
         values(#{id}, #{name}, #{registerId}, #{loginId}, #{pwd})
     </insert>
-    <update id="update"  parameterType="com.easy.human.dao.bean.User" >
+    <update id="update"  parameterType="easy.human.dao.bean.User" >
         update User SET name=#{name}, pwd=#{pwd}
         where id=#{id}
     </update>

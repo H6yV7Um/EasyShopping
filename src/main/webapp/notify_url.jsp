@@ -5,6 +5,7 @@
 <%@ page import="com.alipay.config.*"%>
 <%@ page import="com.alipay.api.*"%>
 <%@ page import="com.alipay.api.internal.util.*"%>
+<%@ page import="alipay.config.AlipayConfig" %>
 <%
 /* *
  * 功能：支付宝服务器异步通知页面

@@ -9,7 +9,7 @@
 
     <mvc:annotation-driven/>
     <context:annotation-config/>
-    <context:component-scan base-package="com.easy" use-default-filters="false">
+    <context:component-scan base-package="easy" use-default-filters="false">
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
         <context:include-filter type="annotation"
                                 expression="org.springframework.web.bind.annotation.ControllerAdvice"/>
@@ -26,7 +26,7 @@
     <mvc:annotation-driven >
 
         <mvc:argument-resolvers>
-            <bean class="com.easy.spring.params.MbyArgumentResolver"/>
+            <bean class="easy.spring.params.MbyArgumentResolver"/>
         </mvc:argument-resolvers>
 
         <mvc:message-converters register-defaults="true">
@@ -34,7 +34,7 @@
             <bean class="org.springframework.http.converter.StringHttpMessageConverter">
                 <constructor-arg value="UTF-8"/>
             </bean>
-            <bean class="com.easy.spring.response.MBYMappingJackson2HttpMessageConverter"/>
+            <bean class="easy.spring.response.MBYMappingJackson2HttpMessageConverter"/>
 
 
             <!-- 将Jackson2HttpMessageConverter的默认格式化输出设为true -->

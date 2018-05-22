@@ -6,7 +6,7 @@
 <!-- namespace命名空间，作用就是对sql进行分类化管理，理解sql隔离
 注意：使用mapper代理方法开发，namespace有特殊重要的作用
 -->
-<mapper namespace="com.easy.order.dao.Mapper.CommentMapper">
+<mapper namespace="easy.order.dao.Mapper.CommentMapper">
 
     <!-- 在 映射文件中配置很多sql语句 -->
     <!-- 需求：通过id查询用户表的记录 -->
@@ -20,27 +20,27 @@
     resultType：指定sql输出结果 的所映射的java对象类型，select指定resultType表示将单条记录映射成的java对象。
      -->
 
-    <select id="get" parameterType="string" resultType="com.easy.order.dao.bean.Comment">
+    <select id="get" parameterType="string" resultType="easy.order.dao.bean.Comment">
         SELECT * FROM Comment WHERE id=#{id}
     </select>
-    <select id="findAllComment"  resultType="com.easy.order.dao.bean.Comment">
+    <select id="findAllComment"  resultType="easy.order.dao.bean.Comment">
         SELECT *  FROM Comment
     </select>
-    <select id="listByStatus"  resultType="com.easy.order.dao.bean.Comment">
+    <select id="listByStatus"  resultType="easy.order.dao.bean.Comment">
         SELECT *  FROM Comment   WHERE status=#{status}
 
                 order by a.createTime desc
 
     </select>
-    <select id="search"  resultType="com.easy.order.dao.bean.Comment">
+    <select id="search"  resultType="easy.order.dao.bean.Comment">
         SELECT *  FROM Comment  a  WHERE name like #{key}
         order by a.createTime desc
     </select>
-    <insert id="add" parameterType="com.easy.order.dao.bean.Comment">
+    <insert id="add" parameterType="easy.order.dao.bean.Comment">
         insert into Comment(id,title, createTime,imgeId,content,email)
         values(#{id}, #{title},#{createTime}, #{imgeId}, #{content})
     </insert>
-    <update id="update"  parameterType="com.easy.order.dao.bean.Goods" >
+    <update id="update"  parameterType="easy.order.dao.bean.Goods" >
         update Goods SET title=#{title},createTime=#{createTime},imgeId=#{imgeId},
         content=#{content},email=#{email}
         where id=#{id}

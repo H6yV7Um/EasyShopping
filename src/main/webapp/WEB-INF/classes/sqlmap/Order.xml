@@ -6,7 +6,7 @@
 <!-- namespace命名空间，作用就是对sql进行分类化管理，理解sql隔离
 注意：使用mapper代理方法开发，namespace有特殊重要的作用
 -->
-<mapper namespace="com.easy.order.dao.Mapper.OrderMapper">
+<mapper namespace="easy.order.dao.Mapper.OrderMapper">
 
     <!-- 在 映射文件中配置很多sql语句 -->
     <!-- 需求：通过id查询用户表的记录 -->
@@ -20,28 +20,28 @@
     resultType：指定sql输出结果 的所映射的java对象类型，select指定resultType表示将单条记录映射成的java对象。
      -->
 
-    <select id="findOrderById" parameterType="string" resultType="com.easy.order.dao.bean.ShopOrder">
+    <select id="findOrderById" parameterType="string" resultType="easy.order.dao.bean.ShopOrder">
         SELECT * FROM ShopOrder WHERE id=#{id}
     </select>
-    <select id="findAllOrders"  resultType="com.easy.order.dao.bean.ShopOrder">
+    <select id="findAllOrders"  resultType="easy.order.dao.bean.ShopOrder">
         SELECT *  FROM ShopOrder
     </select>
-    <select id="listByStatus"  resultType="com.easy.order.dao.bean.ShopRecorder">
+    <select id="listByStatus"  resultType="easy.order.dao.bean.ShopRecorder">
         SELECT a.id,a.goodsId,a.total,a.num,a.createTime,b.name ,b.imageId ,b.price FROM ShopOrder a ,Goods b  WHERE  a.goodsId=b.id and a.status=#{status}
         order by a.createTime desc
 
     </select>
-    <select id="getPayList"  resultType="com.easy.order.dao.bean.ShopRecorder">
+    <select id="getPayList"  resultType="easy.order.dao.bean.ShopRecorder">
              SELECT a.id,a.goodsId,a.total,a.num,a.createTime,b.name ,b.imageId ,b.price FROM ShopOrder a ,Goods b  WHERE  a.goodsId=b.id and a.status='1'and a.creatorId=#{id} order by a.createTime desc
 
     </select>
 
 
-    <insert id="add" parameterType="com.easy.order.dao.bean.ShopOrder">
+    <insert id="add" parameterType="easy.order.dao.bean.ShopOrder">
         insert into ShopOrder(id,goodsId, creator,creatorId,createTime,type,num,total,status)
         values(#{id}, #{goodsId}, #{creator} , #{creatorId}, #{createTime}, #{type},#{num}, #{total}, #{status})
     </insert>
-    <update id="update"  parameterType="com.easy.order.dao.bean.ShopOrder" >
+    <update id="update"  parameterType="easy.order.dao.bean.ShopOrder" >
         update ShopOrder SET goodsId=#{goodsId},creator=#{creator},creatorId=#{creatorId},
         createTime=#{createTime},type=#{type},num=#{num},total=#{total},status=#{status}
         where id=#{id}

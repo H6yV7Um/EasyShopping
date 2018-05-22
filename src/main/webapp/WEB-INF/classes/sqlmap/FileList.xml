@@ -6,7 +6,7 @@
 <!-- namespace命名空间，作用就是对sql进行分类化管理，理解sql隔离
 注意：使用mapper代理方法开发，namespace有特殊重要的作用
 -->
-<mapper namespace="com.easy.order.dao.Mapper.FileRecorderMapper">
+<mapper namespace="easy.order.dao.Mapper.FileRecorderMapper">
 
     <!-- 在 映射文件中配置很多sql语句 -->
     <!-- 需求：通过id查询用户表的记录 -->
@@ -20,17 +20,17 @@
     resultType：指定sql输出结果 的所映射的java对象类型，select指定resultType表示将单条记录映射成的java对象。
      -->
 
-    <select id="findOrderById" parameterType="string" resultType="com.easy.order.dao.bean.FileRecorder">
+    <select id="findOrderById" parameterType="string" resultType="easy.order.dao.bean.FileRecorder">
         SELECT * FROM filelist WHERE id=#{id}
     </select>
-    <select id="findAllOrders"  resultType="com.easy.order.dao.bean.FileRecorder">
+    <select id="findAllOrders"  resultType="easy.order.dao.bean.FileRecorder">
         SELECT *  FROM filelist
     </select>
 
-    <insert id="add" parameterType="com.easy.order.dao.bean.FileRecorder">
+    <insert id="add" parameterType="easy.order.dao.bean.FileRecorder">
         insert into filelist(id,name, filePath,creator) values(#{id}, #{name}, #{filePath}, #{creator})
     </insert>
-    <update id="update"  parameterType="com.easy.order.dao.bean.FileRecorder" >
+    <update id="update"  parameterType="easy.order.dao.bean.FileRecorder" >
         update filelist SET name=#{name},filePath=#{filePath},creator=#{creator},refId=#{refId}
         where id=#{id}
     </update>

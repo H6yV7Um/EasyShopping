@@ -6,26 +6,26 @@
 <!-- namespace命名空间，作用就是对sql进行分类化管理，理解sql隔离
 注意：使用mapper代理方法开发，namespace有特殊重要的作用
 -->
-<mapper namespace="com.easy.human.dao.mapper.RoleUserMapper">
+<mapper namespace="easy.human.dao.mapper.RoleUserMapper">
 
     <!-- 在 映射文件中配置很多sql语句 -->
     <!-- 需求：通过id查询用户表的记录 -->
 
 
-    <select id="get" parameterType="string" resultType="com.easy.human.dao.bean.RoleUser">
+    <select id="get" parameterType="string" resultType="easy.human.dao.bean.RoleUser">
         SELECT * FROM RoleUser WHERE id=#{id}
     </select>
 
 
-    <select id="list"  resultType="com.easy.human.dao.bean.RoleUser">
+    <select id="list"  resultType="easy.human.dao.bean.RoleUser">
         SELECT *  FROM RoleUser
     </select>
 
-    <insert id="add" parameterType="com.easy.human.dao.bean.RoleUser">
+    <insert id="add" parameterType="easy.human.dao.bean.RoleUser">
         insert into RoleUser(id,name,userId)
         values(#{id}, #{name},  #{userId})
     </insert>
-    <update id="update"  parameterType="com.easy.human.dao.bean.RoleUser" >
+    <update id="update"  parameterType="easy.human.dao.bean.RoleUser" >
         update RoleUser SET name=#{name}, userId=#{userId}
         where id=#{id}
     </update>

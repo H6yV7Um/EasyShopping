@@ -10,8 +10,9 @@
 <%@ page import="com.alipay.config.*"%>
 <%@ page import="com.alipay.api.*"%>
 <%@ page import="com.alipay.api.internal.util.*"%>
-<%@ page import="com.easy.order.service.OrderService"%>
-<%@ page import="com.easy.order.dao.bean.ShopOrder" %>
+<%@ page import="easy.order.service.OrderService"%>
+<%@ page import="easy.order.dao.bean.ShopOrder" %>
+<%@ page import="alipay.config.AlipayConfig" %>
 <%
 /* *
  * 功能：支付宝服务器同步通知页面
